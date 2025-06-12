@@ -90,7 +90,7 @@ export default function Header() {
 
         <div className="hidden md:flex items-center space-x-4">
           <Button variant="ghost" className="text-white hover:text-white/80">
-            8108556625
+            7738420349
           </Button>
           <Button variant="outline" className="bg-white text-emerald-600 hover:bg-white/90">
             REQUEST A CALL BACK
@@ -209,7 +209,7 @@ export default function Header() {
                   className="w-full flex items-center justify-center gap-2 py-6 text-lg border-emerald-200 hover:bg-emerald-50"
                 >
                   <PhoneCall className="h-5 w-5" />
-                  8108556625
+                  7738420349
                 </Button>
                 <Button className="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-6 text-lg">
                   REQUEST A CALL BACK

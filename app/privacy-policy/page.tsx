@@ -249,10 +249,10 @@ export default function PrivacyPolicyPage() {
                     Email: info@mahatradrings.com
                   </a>
                   <a
-                    href="tel:8108556625"
+                    href="tel:7738420349"
                     className="border-2 border-white text-white hover:bg-white hover:text-green-600 py-3 px-8 text-lg font-semibold rounded-xl transition-all duration-300 inline-block"
                   >
-                    Call: 8108556625
+                    Call: 7738420349
                   </a>
                 </div>
               </CardContent>

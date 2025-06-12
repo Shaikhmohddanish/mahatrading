@@ -206,8 +206,8 @@ export default function Home() {
               <p>
                 If you suspect any suspicious activity or need to verify the authenticity of a message, do not hesitate
                 to contact our customer support team at{" "}
-                <a href="tel:8108556625" className="text-green-600 hover:underline">
-                  8108556625
+                <a href="tel:7738420349" className="text-green-600 hover:underline">
+                  7738420349
                 </a>{" "}
                 or via email at{" "}
                 <a href="mailto:info@mahatradrings.com" className="text-green-600 hover:underline">

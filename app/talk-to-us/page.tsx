@@ -163,8 +163,8 @@ export default function TalkToUsPage() {
                         <div>
                           <h3 className="font-semibold text-lg">Phone</h3>
                           <p className="text-gray-600">Call us for immediate assistance</p>
-                          <a href="tel:8108556625" className="text-green-600 hover:underline font-semibold text-lg">
-                            8108556625
+                          <a href="tel:7738420349" className="text-green-600 hover:underline font-semibold text-lg">
+                            7738420349
                           </a>
                         </div>
                       </div>
@@ -211,7 +211,7 @@ export default function TalkToUsPage() {
                     <div className="space-y-4">
                       <Button
                         className="w-full bg-green-600 hover:bg-green-700 text-white py-3 text-lg font-semibold rounded-xl"
-                        onClick={() => window.open("tel:8108556625")}
+                        onClick={() => window.open("tel:7738420349")}
                       >
                         <Phone className="h-5 w-5 mr-2" />
                         Call Now

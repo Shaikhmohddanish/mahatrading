@@ -402,8 +402,8 @@ export default function OptionsPackagesPage() {
                   <p>
                     If you have any doubts or concerns about the authenticity of an email, please reach out to our
                     customer support number{" "}
-                    <a href="tel:8108556625" className="text-blue-600 hover:underline font-semibold">
-                      8108556625
+                    <a href="tel:7738420349" className="text-blue-600 hover:underline font-semibold">
+                      7738420349
                     </a>{" "}
                     or email us at{" "}
                     <a

@@ -110,7 +110,7 @@ export default function Footer() {
               <li className="flex items-start">
                 <Phone className="h-5 w-5 mr-2 mt-0.5" />
                 <div>
-                  <p className="font-medium">8108556625</p>
+                  <p className="font-medium">7738420349</p>
                   <p className="text-xs">Mon-Fri : 09:00 AM - 06:00 PM</p>
                   <p className="text-xs">Sat & Sun - Closed</p>
                 </div>
