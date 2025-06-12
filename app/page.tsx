@@ -189,8 +189,8 @@ export default function Home() {
                 services. To safeguard your interactions with us, please note that all official offers, promotions, and
                 communications related to sales and discounts from <span className="font-semibold">Maha Tradrings</span>{" "}
                 will be sent only through our verified email address:{" "}
-                <a href="mailto:sales@mahatradrings.com" className="text-green-600 hover:underline">
-                  sales@mahatradrings.com
+                <a href="mailto:info@mahatradrings.com" className="text-green-600 hover:underline">
+                  info@mahatradrings.com
                 </a>
                 .
               </p>
@@ -198,8 +198,8 @@ export default function Home() {
                 We've recently been alerted to the possibility of unauthorized entities imitating our communication
                 channels for fraudulent purposes. To protect yourself from phishing scams or other deceptive activities,
                 be vigilant and only engage with emails sent from the official email address:{" "}
-                <a href="mailto:sales@mahatradrings.com" className="text-green-600 hover:underline">
-                  sales@mahatradrings.com
+                <a href="mailto:info@mahatradrings.com" className="text-green-600 hover:underline">
+                  info@mahatradrings.com
                 </a>
                 .
               </p>
@@ -210,8 +210,8 @@ export default function Home() {
                   8108556625
                 </a>{" "}
                 or via email at{" "}
-                <a href="mailto:compliance@mahatradrings.com" className="text-green-600 hover:underline">
-                  compliance@mahatradrings.com
+                <a href="mailto:info@mahatradrings.com" className="text-green-600 hover:underline">
+                  info@mahatradrings.com
                 </a>
                 .
               </p>

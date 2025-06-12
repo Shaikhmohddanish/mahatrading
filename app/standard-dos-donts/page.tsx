@@ -167,8 +167,8 @@ export default function StandardDosDontsPage() {
                       <p className="text-gray-700 leading-relaxed">
                         Maha Tradrings will never ask for your D-mat/Trading account login ID or password. If anyone
                         requests this information, immediately decline and report it to us at{" "}
-                        <a href="mailto:compliance@mahatradrings.com" className="text-blue-600 hover:underline">
-                          compliance@mahatradrings.com
+                        <a href="mailto:info@mahatradrings.com" className="text-blue-600 hover:underline">
+                          info@mahatradrings.com
                         </a>
                         .
                       </p>

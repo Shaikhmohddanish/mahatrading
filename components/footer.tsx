@@ -118,7 +118,7 @@ export default function Footer() {
               <li className="flex items-start">
                 <Mail className="h-5 w-5 mr-2 mt-0.5" />
                 <div>
-                  <p className="font-medium">compliance@mahatradrings.com</p>
+                  <p className="font-medium">info@mahatradrings.com</p>
                   <p className="text-xs">Customer support</p>
                 </div>
               </li>

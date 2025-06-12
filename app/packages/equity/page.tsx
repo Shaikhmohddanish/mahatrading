@@ -229,8 +229,8 @@ export default function EquityPackagesPage() {
                     We value your trust and want to ensure that you have the best possible experience with our services.
                     Please be informed that all our offers, promotions, discounts, and sales-related email
                     communications from Maha Tradrings will only be sent from the email address:{" "}
-                    <a href="mailto:sales@mahatradrings.com" className="text-blue-600 hover:underline font-semibold">
-                      sales@mahatradrings.com
+                    <a href="mailto:info@mahatradrings.com" className="text-blue-600 hover:underline font-semibold">
+                      info@mahatradrings.com
                     </a>
                     .
                   </p>
@@ -239,8 +239,8 @@ export default function EquityPackagesPage() {
                     channels for malicious purposes. To protect yourself from potential phishing scams or fraudulent
                     activities, please be cautious and only respond to emails originating from the specified official
                     email address:{" "}
-                    <a href="mailto:sales@mahatradrings.com" className="text-blue-600 hover:underline font-semibold">
-                      sales@mahatradrings.com
+                    <a href="mailto:info@mahatradrings.com" className="text-blue-600 hover:underline font-semibold">
+                      info@mahatradrings.com
                     </a>
                     .
                   </p>
@@ -252,10 +252,10 @@ export default function EquityPackagesPage() {
                     </a>{" "}
                     or email us at{" "}
                     <a
-                      href="mailto:compliance@mahatradrings.com"
+                      href="mailto:info@mahatradrings.com"
                       className="text-blue-600 hover:underline font-semibold"
                     >
-                      compliance@mahatradrings.com
+                      info@mahatradrings.com
                     </a>
                     .
                   </p>

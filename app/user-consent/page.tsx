@@ -193,8 +193,8 @@ export default function UserConsentPage() {
           <div className="mt-12 text-center">
             <p className="text-gray-500 text-sm">
               Last updated: January 2025 | For any questions regarding this consent, please contact us at{" "}
-              <a href="mailto:compliance@mahatradrings.com" className="text-green-600 hover:underline">
-                compliance@mahatradrings.com
+              <a href="mailto:info@mahatradrings.com" className="text-green-600 hover:underline">
+                info@mahatradrings.com
               </a>
             </p>
           </div>
