@@ -230,12 +230,12 @@ export default function OptionsPackagesPage() {
     <div className="flex flex-col min-h-screen">
       <div className="container mx-auto px-4 md:px-6 py-12">
         <div className="max-w-7xl mx-auto">
-          <ScrollAnimation animateOnce={true} direction="right">
+          <ScrollAnimation direction="right">
             <h1 className="text-4xl md:text-5xl font-bold text-center mb-12">Options Packages</h1>
           </ScrollAnimation>
 
           {/* Tab Navigation */}
-          <ScrollAnimation animateOnce={true} direction="left">
+          <ScrollAnimation direction="left">
             <div className="flex justify-center mb-12">
               <div className="bg-gray-100 p-1 rounded-xl inline-flex flex-wrap">
                 <button
@@ -273,7 +273,7 @@ export default function OptionsPackagesPage() {
           </ScrollAnimation>
 
           {/* Package Cards - Always 2x2 Grid */}
-          <ScrollAnimation animateOnce={true} direction="right">
+          <ScrollAnimation direction="right">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
               {currentPackages.map((pkg, index) => (
                 <Card
@@ -359,7 +359,7 @@ export default function OptionsPackagesPage() {
           </ScrollAnimation>
 
           {/* Phishing Scams Warning Section */}
-          <ScrollAnimation animateOnce={true} direction="left">
+          <ScrollAnimation direction="left">
             <Card className="bg-gradient-to-br from-red-50 to-orange-50 border-2 border-red-200 shadow-lg">
               <CardContent className="p-8">
                 <div className="text-center mb-6">
