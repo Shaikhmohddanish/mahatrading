@@ -182,15 +182,15 @@ export default function Home() {
           <ScrollAnimation direction="left">
             <div className="max-w-3xl mx-auto space-y-4">
               <p className="text-lg">
-                Dear Valued Customer, Greetings from <span className="font-semibold">Maha Tradings</span>!
+                Dear Valued Customer, Greetings from <span className="font-semibold">Capital-Grow</span>!
               </p>
               <p>
                 Your trust is our top priority, and we strive to deliver a secure and seamless experience with our
                 services. To safeguard your interactions with us, please note that all official offers, promotions, and
-                communications related to sales and discounts from <span className="font-semibold">Maha Tradings</span>{" "}
+                communications related to sales and discounts from <span className="font-semibold">Capital-Grow</span>{" "}
                 will be sent only through our verified email address:{" "}
-                <a href="mailto:info@mahatradrings.com" className="text-green-600 hover:underline">
-                  info@mahatradrings.com
+                <a href="mailto:sales@capital-grow.com" className="text-green-600 hover:underline">
+                  sales@capital-grow.com
                 </a>
                 .
               </p>
@@ -198,8 +198,8 @@ export default function Home() {
                 We've recently been alerted to the possibility of unauthorized entities imitating our communication
                 channels for fraudulent purposes. To protect yourself from phishing scams or other deceptive activities,
                 be vigilant and only engage with emails sent from the official email address:{" "}
-                <a href="mailto:info@mahatradrings.com" className="text-green-600 hover:underline">
-                  info@mahatradrings.com
+                <a href="mailto:sales@capital-grow.com" className="text-green-600 hover:underline">
+                  sales@capital-grow.com
                 </a>
                 .
               </p>
@@ -210,13 +210,13 @@ export default function Home() {
                   8108556625
                 </a>{" "}
                 or via email at{" "}
-                <a href="mailto:info@mahatradrings.com" className="text-green-600 hover:underline">
-                  info@mahatradrings.com
+                <a href="mailto:compliance@capital-grow.com" className="text-green-600 hover:underline">
+                  compliance@capital-grow.com
                 </a>
                 .
               </p>
               <p>
-                Thank you for your attention and continued trust in <span className="font-semibold">Maha Tradings</span>.
+                Thank you for your attention and continued trust in <span className="font-semibold">Capital-Grow</span>.
               </p>
             </div>
           </ScrollAnimation>

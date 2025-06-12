@@ -46,12 +46,12 @@ export default function TermsConditionsPage() {
                   <h2 className="text-3xl font-bold text-blue-700">Company Information</h2>
                 </div>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  The term <span className="font-semibold">Maha Tradings</span> (or "us" or "we") refers to the owners,
-                  managers of the website Maha Tradings and/or Maha Tradings whose office is located at{" "}
+                  The term <span className="font-semibold">Capital Grow</span> (or "us" or "we") refers to the owners,
+                  managers of the website Capital Grow and/or Capital Grow whose office is located at{" "}
                   <span className="font-semibold">
                     Office No. 815, Rupa Solitaire, MBP, Koparkhairane, Thane, Maharashtra – 400710, Maharashtra, India
                   </span>
-                  . and owns and manages the website Maha Tradings.
+                  . and owns and manages the website Capital Grow.
                 </p>
               </CardContent>
             </Card>
@@ -67,11 +67,11 @@ export default function TermsConditionsPage() {
                 </div>
                 <p className="text-lg text-gray-700 leading-relaxed">
                   Disclosures under the provisions of SEBI (Research Analysts) Regulations 2014 (Regulations): registered
-                  Research Analyst ("Maha Tradings") is regulated by the Securities and Exchange Board of India ("SEBI")
+                  Research Analyst ("Capital Grow") is regulated by the Securities and Exchange Board of India ("SEBI")
                   and is licensed to carry on the business of share trading research providing service and related
                   activities. The term "you" refers to the user or viewer of our website. By visiting our website/mobile
                   application you are agreeing to be bound by the following terms and conditions and all other terms and
-                  conditions of Maha Tradings.
+                  conditions of Capital Grow.
                 </p>
               </CardContent>
             </Card>
@@ -93,7 +93,7 @@ export default function TermsConditionsPage() {
                     any changes that we may introduce.
                   </p>
                   <p>
-                    The term Maha Tradings is used through this entire Terms and Conditions document to refer to the
+                    The term Capital Grow is used through this entire Terms and Conditions document to refer to the
                     website and/or our mobile application, its owners/proprietor, and the employees and associates of the
                     owner.
                   </p>
@@ -111,8 +111,8 @@ export default function TermsConditionsPage() {
                   <h2 className="text-3xl font-bold text-red-700">No Warranties</h2>
                 </div>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  This Website is provided "as is" without any representations or warranties, express or implied. Maha
-                  Tradings Trading Research firm and its owner, director, employees, affiliates, and associates make no
+                  This Website is provided "as is" without any representations or warranties, express or implied. Capital
+                  Grow Trading Research firm and its owner, director, employees, affiliates, and associates make no
                   representations or warranties about the Website or the information and materials provided on the
                   Website. This Website will be constantly available, or available at all; or the information on this
                   Website is believed to be complete, true, accurate, or non-misleading.
@@ -131,7 +131,7 @@ export default function TermsConditionsPage() {
                 </div>
                 <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
                   <p>
-                    Without prejudice to the generality of the foregoing paragraph, Maha Tradings and its owner, directors,
+                    Without prejudice to the generality of the foregoing paragraph, Capital Grow and its owner, directors,
                     employees, affiliates, and associates state that:
                   </p>
                   <ul className="list-disc list-inside space-y-2 ml-4">
@@ -144,7 +144,7 @@ export default function TermsConditionsPage() {
                       manner meant to reflect or influence the buying decision of the customers
                     </li>
                     <li>
-                      Maha Tradings does not in any manner whatsoever verify or vouch for the accuracy or authenticity of
+                      Capital Grow does not in any manner whatsoever verify or vouch for the accuracy or authenticity of
                       the results
                     </li>
                     <li>
@@ -168,7 +168,7 @@ export default function TermsConditionsPage() {
                 </div>
                 <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
                   <p>
-                    The documents/reports/research analysis available on the Website or published/produced by Maha Tradings
+                    The documents/reports/research analysis available on the Website or published/produced by Capital Grow
                     does not constitute an offer or solicitation for the purchase or sale of any Security/financial
                     instrument or as an official confirmation of any transaction.
                   </p>
@@ -196,11 +196,11 @@ export default function TermsConditionsPage() {
                   <h2 className="text-3xl font-bold text-teal-700">Registration/Enrollment and Termination</h2>
                 </div>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  By registering for this facility you understand that Maha Tradings reserves the right, in its sole
+                  By registering for this facility you understand that Capital Grow reserves the right, in its sole
                   discretion, to deny you access to this Website or any portion thereof without notice for the following
                   reasons: (a) any unauthorized access or use by you (b) if you assign or transfer any rights granted to
                   you (c) if you violate any of the other terms and conditions. Upon termination, all rights granted to
-                  you will terminate and revert to Maha Tradings Trading Research.
+                  you will terminate and revert to Capital Grow Trading Research.
                 </p>
               </CardContent>
             </Card>
@@ -215,7 +215,7 @@ export default function TermsConditionsPage() {
                   <h2 className="text-3xl font-bold text-cyan-700">License</h2>
                 </div>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  Maha Tradings hereby grants you a limited, non-exclusive, non-assignable, and non-transferable license to
+                  Capital Grow hereby grants you a limited, non-exclusive, non-assignable, and non-transferable license to
                   access the Website provided and expressly conditioned upon your agreement that all such access and use
                   shall be governed by all of the terms and conditions outlined in this User Consent.
                 </p>
@@ -233,7 +233,7 @@ export default function TermsConditionsPage() {
                 </div>
                 <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
                   <p>
-                    Unauthorized use of this Website and systems, including unauthorized entry into Maha Tradings systems,
+                    Unauthorized use of this Website and systems, including unauthorized entry into Capital Grow systems,
                     online accounts, misuse of passwords, or misuse of any other information, is strictly prohibited.
                   </p>
                   <p>
@@ -242,7 +242,7 @@ export default function TermsConditionsPage() {
                     log-in ids and passwords secure.
                   </p>
                   <p>
-                    Maha Tradings may use certain technology on its websites to collect information from visitors and may
+                    Capital Grow may use certain technology on its websites to collect information from visitors and may
                     compile aggregate statistical information about how visitors use its websites. No individually
                     identifiable information is collected for this purpose.
                   </p>
@@ -260,10 +260,10 @@ export default function TermsConditionsPage() {
                   <h2 className="text-3xl font-bold text-yellow-700">Service Delays</h2>
                 </div>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  Maha Tradings reserves its right, in its sole discretion, without any obligation, and without any notice
+                  Capital Grow reserves its right, in its sole discretion, without any obligation, and without any notice
                   requirement, to change, improve or correct the information, materials, and descriptions on this website
                   and to suspend and/or deny access to this website for scheduled or unscheduled maintenance, upgrades,
-                  improvements or corrections. Maha Tradings shall not be liable for any loss or liability resulting from
+                  improvements or corrections. Capital Grow shall not be liable for any loss or liability resulting from
                   delays or interruptions due to electronic or mechanical equipment failures, weather, strikes, pandemic
                   situations or other like causes.
                 </p>
@@ -281,17 +281,17 @@ export default function TermsConditionsPage() {
                 </div>
                 <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
                   <p>
-                    Concerning the data from Capital Markets and the products made available on the Website by Maha
-                    Tradings, YOU HEREBY AGREE THAT:
+                    Concerning the data from Capital Markets and the products made available on the Website by Capital
+                    Grow, YOU HEREBY AGREE THAT:
                   </p>
                   <ul className="list-disc list-inside space-y-2 ml-4">
                     <li>You confirm that the details provided by you are true</li>
                     <li>You declare that the amount being transferred is derived through legitimate sources</li>
                     <li>
-                      Maha Tradings sources data from Capital Markets and is not responsible for correctness or accuracy
+                      Capital Grow sources data from Capital Markets and is not responsible for correctness or accuracy
                     </li>
                     <li>NSE data is delayed by 5 minutes and BSE data is delayed by 15 minutes</li>
-                    <li>The authenticity of data received from Capital Markets is not guaranteed by Maha Tradings</li>
+                    <li>The authenticity of data received from Capital Markets is not guaranteed by Capital Grow</li>
                   </ul>
                 </div>
               </CardContent>
@@ -307,10 +307,10 @@ export default function TermsConditionsPage() {
                   <h2 className="text-3xl font-bold text-red-700">Liability</h2>
                 </div>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  You agree that Maha Tradings shall not be liable, whether in contract or tort, for any direct, special,
+                  You agree that Capital Grow shall not be liable, whether in contract or tort, for any direct, special,
                   indirect, consequential or incidental damages arising out of the use or inability to use the Website.
                   This limitation includes transmission of viruses, failure of equipment, unauthorized access, theft,
-                  operator errors, strikes or any force majeure. Maha Tradings cannot guarantee continuous, uninterrupted,
+                  operator errors, strikes or any force majeure. Capital Grow cannot guarantee continuous, uninterrupted,
                   or secure access to this website.
                 </p>
               </CardContent>
@@ -327,9 +327,9 @@ export default function TermsConditionsPage() {
                 </div>
                 <p className="text-lg text-gray-700 leading-relaxed">
                   The links on this site will allow you to leave the Website. The linked sites are not under the control
-                  of the Website. Maha Tradings has not reviewed, nor approved these sites and is not responsible for the
+                  of the Website. Capital Grow has not reviewed, nor approved these sites and is not responsible for the
                   contents or omissions of any linked site. The inclusion of any linked site does not imply endorsement by
-                  Maha Tradings.
+                  Capital Grow.
                 </p>
               </CardContent>
             </Card>
@@ -344,8 +344,8 @@ export default function TermsConditionsPage() {
                   <h2 className="text-3xl font-bold text-purple-700">Indemnification</h2>
                 </div>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  You shall indemnify, defend and hold harmless Maha Tradings from any claims and losses imposed on,
-                  incurred by, or asserted as a result of or related to: (a) your access and use of Maha Tradings (b) any
+                  You shall indemnify, defend and hold harmless Capital Grow from any claims and losses imposed on,
+                  incurred by, or asserted as a result of or related to: (a) your access and use of Capital Grow (b) any
                   non-compliance by user with the terms and conditions hereof; or (c) any third party actions related to
                   users receipt and use of the information, whether authorized or unauthorized.
                 </p>
@@ -367,13 +367,13 @@ export default function TermsConditionsPage() {
                     <p className="text-gray-700 leading-relaxed">
                       The copyright in this website and the material on this website (including text, artwork,
                       photographs, images, music, audio material, video material, and audio-visual material) is owned by
-                      Maha Tradings and its licensors.
+                      Capital Grow and its licensors.
                     </p>
                   </div>
                   <div>
                     <h3 className="text-xl font-bold mb-3">Copyright License</h3>
                     <p className="text-gray-700 leading-relaxed mb-3">
-                      Maha Tradings grants you a non-exclusive royalty-free revocable license to:
+                      Capital Grow grants you a non-exclusive royalty-free revocable license to:
                     </p>
                     <ul className="list-disc list-inside space-y-1 ml-4 text-gray-700">
                       <li>View this website and the material on a computer or mobile device via a web browser</li>
@@ -382,7 +382,7 @@ export default function TermsConditionsPage() {
                     </ul>
                     <p className="text-gray-700 leading-relaxed mt-3">
                       You must not adapt, edit, change, transform, republish, redistribute, broadcast, or show or play in
-                      public this website without Maha Tradings's prior written permission.
+                      public this website without Capital Grow's prior written permission.
                     </p>
                   </div>
                   <div>
@@ -501,7 +501,7 @@ export default function TermsConditionsPage() {
                           </td>
                           <td className="border border-gray-300 p-4 text-center">
                             In any circumstance, do not reveal your login credentials to any other person, not even a
-                            Maha Tradings representative
+                            Capital Grow representative
                           </td>
                         </tr>
                         <tr className="bg-gray-50">
@@ -546,7 +546,7 @@ export default function TermsConditionsPage() {
                         <tr>
                           <td className="border border-gray-300 p-4 text-center">
                             Forward suspicious emails asking for sensitive information to{" "}
-                            <span className="text-blue-600">info@mahatradrings.com</span>
+                            <span className="text-blue-600">sales@capital-grow.com</span>
                           </td>
                           <td className="border border-gray-300 p-4 text-center">
                             Do not reveal your personal information Customer IDs, Passwords, and One Time Passwords (OTP)
@@ -555,8 +555,8 @@ export default function TermsConditionsPage() {
                         </tr>
                         <tr className="bg-gray-50">
                           <td className="border border-gray-300 p-4 text-center">
-                            Write to us at <span className="text-blue-600">info@mahatradrings.com</span>, if you notice a
-                            duplicate Maha Tradings or webpage
+                            Write to us at <span className="text-blue-600">sales@capital-grow.com</span>, if you notice a
+                            duplicate Capital Grow or webpage
                           </td>
                           <td className="border border-gray-300 p-4 text-center">
                             Do not open or click on attachments included in emails from organizations or people you don't
@@ -599,7 +599,7 @@ export default function TermsConditionsPage() {
                         </tr>
                         <tr>
                           <td className="border border-gray-300 p-4 text-center">
-                            Type the entire Maha Tradings address (<span className="text-blue-600">Maha Tradings</span>)
+                            Type the entire Capital Grow address (<span className="text-blue-600">Capital Grow</span>)
                             into your browser to avoid being misdirected to a bogus site when you use the search option.
                           </td>
                           <td className="border border-gray-300 p-4 text-center">
@@ -609,7 +609,7 @@ export default function TermsConditionsPage() {
                         <tr className="bg-gray-50">
                           <td className="border border-gray-300 p-4 text-center"></td>
                           <td className="border border-gray-300 p-4 text-center">
-                            Do not trust a site appearing to belong to Maha Tradings if it doesn't start with the 'HTTPS'
+                            Do not trust a site appearing to belong to Capital Grow if it doesn't start with the 'HTTPS'
                             prefix and doesn't have a padlock symbol
                           </td>
                         </tr>
@@ -633,8 +633,8 @@ export default function TermsConditionsPage() {
                   <div>
                     <h3 className="font-bold mb-2">1. Payment Guidelines:</h3>
                     <p>
-                      Payment for all research services should be made in the current account of Maha Tradings only. No
-                      payment should be made in any account of an employee/associate of Maha Tradings Trading Research or
+                      Payment for all research services should be made in the current account of Capital Grow only. No
+                      payment should be made in any account of an employee/associate of Capital Grow Trading Research or
                       any other individual in any condition.
                     </p>
                   </div>
@@ -719,7 +719,7 @@ export default function TermsConditionsPage() {
                     </li>
                     <li>
                       <span className="font-semibold">Vishing:</span> These are phone calls by people pretending to work
-                      for Maha Tradings or another legitimate business, asking you to reveal personal information
+                      for Capital Grow or another legitimate business, asking you to reveal personal information
                     </li>
                     <li>
                       <span className="font-semibold">Trojan/Virus:</span> These are programs inadvertently installed on
@@ -787,27 +787,27 @@ export default function TermsConditionsPage() {
                 </div>
                 <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
                   <p>
-                    Your privacy is important to Maha Tradings. This privacy statement provides information about the
-                    personal information that Maha Tradings Trading Research collect and how Maha Tradings use that personal
+                    Your privacy is important to Capital Grow. This privacy statement provides information about the
+                    personal information that Capital Grow Trading Research collect and how Capital Grow use that personal
                     information.
                   </p>
 
                   <div>
                     <h3 className="text-xl font-bold mb-3">
-                      Maha Tradings may collect and use the following kinds of personal information:
+                      Capital Grow may collect and use the following kinds of personal information:
                     </h3>
                     <ul className="list-disc list-inside space-y-2">
                       <li>Information about your use of this website</li>
-                      <li>Information that you provide using to register with Maha Tradings</li>
+                      <li>Information that you provide using to register with Capital Grow</li>
                       <li>Information about transactions carried out over this Website</li>
                       <li>Information that you provide to subscribe to the Website services</li>
-                      <li>Any other information that you send to Maha Tradings</li>
+                      <li>Any other information that you send to Capital Grow</li>
                     </ul>
                   </div>
 
                   <div>
                     <h3 className="text-xl font-bold mb-3">Using personal information</h3>
-                    <p className="mb-3">Maha Tradings may use your personal information to:</p>
+                    <p className="mb-3">Capital Grow may use your personal information to:</p>
                     <ul className="list-disc list-inside space-y-2">
                       <li>Administer this website</li>
                       <li>Personalize the Website for you</li>
@@ -824,10 +824,10 @@ export default function TermsConditionsPage() {
                     <h3 className="text-xl font-bold mb-3">Securing Your Data</h3>
                     <ul className="list-disc list-inside space-y-2">
                       <li>
-                        Maha Tradings will take reasonable technical and organizational precautions to prevent the loss,
+                        Capital Grow will take reasonable technical and organizational precautions to prevent the loss,
                         misuse, or alteration of your personal information
                       </li>
-                      <li>Maha Tradings will store all the personal information you provide on its secure servers</li>
+                      <li>Capital Grow will store all the personal information you provide on its secure servers</li>
                       <li>
                         Information relating to electronic transactions entered via this Website will be protected by
                         encryption technology
@@ -838,8 +838,8 @@ export default function TermsConditionsPage() {
                   <div>
                     <h3 className="text-xl font-bold mb-3">Cross-border data transfers</h3>
                     <p>
-                      Information that Maha Tradings collect may be stored and processed and transferred between any of the
-                      countries in which Maha Tradings Trading Research operate to enable the use of the information by
+                      Information that Capital Grow collect may be stored and processed and transferred between any of the
+                      countries in which Capital Grow Trading Research operate to enable the use of the information by
                       this privacy policy.
                     </p>
                   </div>
@@ -859,12 +859,12 @@ export default function TermsConditionsPage() {
                 <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
                   <p>
                     This User Consent constitutes the entire agreement between the parties and is inclusive of any other
-                    written agreement existing between you and Maha Tradings. By using the information on Maha Tradings, you
+                    written agreement existing between you and Capital Grow. By using the information on Capital Grow, you
                     assume full responsibility for any gains and losses, financial, emotional, or otherwise, experienced,
                     suffered, or incurred by you.
                   </p>
                   <p>
-                    Maha Tradings does not guarantee the accuracy, completeness or timeliness of, or otherwise endorse in
+                    Capital Grow does not guarantee the accuracy, completeness or timeliness of, or otherwise endorse in
                     any way, the views, opinions, or recommendations expressed in the Information, does not give
                     investment advice and does not advocate the purchase or sale of any security or investment.
                   </p>
@@ -911,15 +911,15 @@ export default function TermsConditionsPage() {
                   <div className="bg-white p-6 rounded-lg border-l-4 border-blue-500">
                     <h3 className="text-xl font-bold mb-3 text-blue-700">Additional Disclaimer for U.S. Persons:</h3>
                     <p className="text-gray-700 leading-relaxed mb-3">
-                      Maha Tradings is not a registered broker-dealer under the U.S. Securities Exchange Act of 1934, as
-                      amended (the "1934 act") and under applicable state laws in the United States. In addition, Maha
-                      Tradings is not a registered investment adviser under the U.S. Investment Advisers Act of 1940, as
+                      Capital Grow is not a registered broker-dealer under the U.S. Securities Exchange Act of 1934, as
+                      amended (the "1934 act") and under applicable state laws in the United States. In addition, Capital
+                      Grow is not a registered investment adviser under the U.S. Investment Advisers Act of 1940, as
                       amended (the "Advisers Act" and together with the 1934 Act, the "Acts), and under applicable state
                       laws in the United States.
                     </p>
                     <p className="text-gray-700 leading-relaxed">
                       Accordingly, in the absence of specific exemption under the Acts, any brokerage and investment
-                      services provided by Maha Tradings, including the products and services described herein are not
+                      services provided by Capital Grow, including the products and services described herein are not
                       available to or intended for U.S. persons. "U.S. Persons" are generally defined as a natural person,
                       residing in the United States or any entity organized or incorporated under the laws of the United
                       States.
@@ -945,9 +945,9 @@ export default function TermsConditionsPage() {
                   <div className="bg-white p-6 rounded-lg border-l-4 border-green-500">
                     <h3 className="text-xl font-bold mb-3 text-green-700">Disclaimer for Canadian Persons:</h3>
                     <p className="text-gray-700 leading-relaxed">
-                      Maha Tradings is not a registered adviser or dealer under applicable Canadian securities laws nor has
+                      Capital Grow is not a registered adviser or dealer under applicable Canadian securities laws nor has
                       it obtained an exemption from the adviser and/or dealer registration requirements under such law.
-                      Accordingly, any services provided by Maha Tradings, including the products and services described
+                      Accordingly, any services provided by Capital Grow, including the products and services described
                       herein, are not available to or intended for Canadian persons.
                     </p>
                   </div>
@@ -967,15 +967,15 @@ export default function TermsConditionsPage() {
                 <div className="bg-white p-6 rounded-lg border-l-4 border-red-500">
                   <p className="text-lg text-gray-800 leading-relaxed">
                     "This website/mobile application and its respective contents (including all research reports and
-                    research alerts published by Maha Tradings) do not constitute an offer or invitation to purchase or
-                    subscribe for any securities or solicitation of any investments or investment services. Maha Tradings
+                    research alerts published by Capital Grow) do not constitute an offer or invitation to purchase or
+                    subscribe for any securities or solicitation of any investments or investment services. Capital Grow
                     and its owner/proprietor, directors, employees, affiliates, and associates do not take any
                     responsibility for any type of losses for its clients in any manner whatsoever. The research services
-                    fees once paid will not be refunded under any circumstances and Maha Tradings and its owner/proprietor
+                    fees once paid will not be refunded under any circumstances and Capital Grow and its owner/proprietor
                     will not be responsible for any losses incurred to its clients in any condition. The clients are at
-                    their own risk for trading based on Maha Tradings's research reports and/or research alerts and they
-                    cannot file any type of legal case or complaint against the Maha Tradings or owner/proprietor of
-                    Maha Tradings in any part of the country."
+                    their own risk for trading based on Capital Grow's research reports and/or research alerts and they
+                    cannot file any type of legal case or complaint against the Capital Grow or owner/proprietor of
+                    Capital Grow in any part of the country."
                   </p>
                 </div>
               </CardContent>
@@ -995,10 +995,10 @@ export default function TermsConditionsPage() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a
-                    href="mailto:info@mahatradrings.com"
+                    href="mailto:sales@capital-grow.com"
                     className="bg-white text-green-600 hover:bg-gray-100 py-3 px-8 text-lg font-semibold rounded-xl transition-all duration-300 inline-block"
                   >
-                    Email: info@mahatradrings.com
+                    Email: sales@capital-grow.com
                   </a>
                   <a
                     href="tel:8108556625"

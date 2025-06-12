@@ -167,8 +167,8 @@ export default function StandardDosDontsPage() {
                       <p className="text-gray-700 leading-relaxed">
                         Capital-Grow will never ask for your D-mat/Trading account login ID or password. If anyone
                         requests this information, immediately decline and report it to us at{" "}
-                        <a href="mailto:info@mahatradrings.com" className="text-blue-600 hover:underline">
-                          info@mahatradrings.com
+                        <a href="mailto:compliance@capital-grow.com" className="text-blue-600 hover:underline">
+                          compliance@capital-grow.com
                         </a>
                         .
                       </p>

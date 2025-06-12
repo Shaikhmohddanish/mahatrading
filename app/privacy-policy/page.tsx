@@ -14,7 +14,7 @@ export default function PrivacyPolicyPage() {
             <div className="text-center mb-12">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">Privacy Policy</h1>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Maha Tradings respects and values the Right to privacy of each and every individual. We are esteemed by
+                Capital Grow respects and values the Right to privacy of each and every individual. We are esteemed by
                 the relationship and by becoming our clients you have a promise from our side that we shall remain loyal
                 to all our clients and non-clients whose information resides with us.
               </p>
@@ -47,7 +47,7 @@ export default function PrivacyPolicyPage() {
                   <h2 className="text-3xl font-bold text-green-700">Our Commitment to Privacy</h2>
                 </div>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  This Privacy Policy of Maha Tradings applies to the current clients as well as former clients. Below
+                  This Privacy Policy of Capital Grow applies to the current clients as well as former clients. Below
                   are the word-by-word credentials of our Privacy Policy:
                 </p>
               </CardContent>
@@ -73,7 +73,7 @@ export default function PrivacyPolicyPage() {
                     <div>
                       <h3 className="text-xl font-bold mb-2">Registration and Contact Consent</h3>
                       <p className="text-gray-700 leading-relaxed">
-                        By registering your mobile number on Maha Tradings website – you agree to be contacted by our
+                        By registering your mobile number on Capital Grow website – you agree to be contacted by our
                         personnel or to receive SMS and it shall be treated as 'opt in' in case the contact number you
                         have registered with us is subscribed in the DND registry (Do Not Disturb). By registering for
                         our services, you also agree to comply with our Private Policy and Terms & Conditions.
@@ -169,7 +169,7 @@ export default function PrivacyPolicyPage() {
                         In addition to the service provided to you your information (Mobile Number, E-Mail ID, etc.) can
                         be brought into use for sending you newsletters, surveys, contest information, or information
                         about any new services of the Company which will be for your own good and while subscribing for
-                        our services you agree that Maha Tradings has the right to do so.
+                        our services you agree that Capital Grow has the right to do so.
                       </p>
                     </div>
                   </div>
@@ -243,10 +243,10 @@ export default function PrivacyPolicyPage() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a
-                    href="mailto:info@mahatradrings.com"
+                    href="mailto:compliance@capital-grow.com"
                     className="bg-white text-green-600 hover:bg-gray-100 py-3 px-8 text-lg font-semibold rounded-xl transition-all duration-300 inline-block"
                   >
-                    Email: info@mahatradrings.com
+                    Email: compliance@capital-grow.com
                   </a>
                   <a
                     href="tel:8108556625"
