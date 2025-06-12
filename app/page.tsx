@@ -14,6 +14,19 @@ export default function Home() {
         <div className="container px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
             <ScrollAnimation direction="right">
+              <div className="flex justify-center">
+                <div className="animate-float">
+                  <Image
+                    src="/banner-image.png"
+                    alt="Trading Insights"
+                    width={500}
+                    height={500}
+                    className="max-w-full h-auto"
+                  />
+                </div>
+              </div>
+            </ScrollAnimation>
+            <ScrollAnimation direction="left">
               <div className="space-y-4">
                 <h1 className="text-4xl md:text-6xl font-bold tracking-tighter">
                   Join Us for Expert Share Market Trading Insights
@@ -24,20 +37,10 @@ export default function Home() {
                   security measures.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
-                  <Button className="bg-green-600 hover:bg-green-700">JOIN US NOW</Button>
-                </div>
-              </div>
-            </ScrollAnimation>
-            <ScrollAnimation direction="left">
-              <div className="flex justify-center">
-                <div className="animate-float">
-                  <Image
-                    src="/banner-image.png"
-                    alt="Trading Insights"
-                    width={500}
-                    height={500}
-                    className="max-w-full h-auto"
-                  />
+                  <Button 
+                  className="bg-green-600 hover:bg-green-700"
+                  onClick={() => (window.location.href = "/talk-to-us")}
+                  >JOIN US NOW</Button>
                 </div>
               </div>
             </ScrollAnimation>
@@ -126,7 +129,9 @@ export default function Home() {
                   expert guidance tailored just for you.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
-                  <Button className="bg-green-600 hover:bg-green-700">JOIN US NOW</Button>
+                  <Button className="bg-green-600 hover:bg-green-700"
+                  onClick={() => (window.location.href = "/talk-to-us")}
+                  >JOIN US NOW</Button>
                 </div>
               </div>
             </ScrollAnimation>
@@ -238,7 +243,9 @@ export default function Home() {
                   confidence. Don't miss this opportunity for expert guidance—schedule your consultation today!
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
-                  <Button className="bg-green-600 hover:bg-green-700">REQUEST A FREE CONSULTATION</Button>
+                  <Button className="bg-green-600 hover:bg-green-700"
+                  onClick={() => (window.location.href = "/talk-to-us")}
+                  >REQUEST A FREE CONSULTATION</Button>
                 </div>
               </div>
             </ScrollAnimation>

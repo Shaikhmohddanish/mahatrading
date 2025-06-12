@@ -344,6 +344,7 @@ export default function OptionsPackagesPage() {
                             ? "bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 shadow-lg"
                             : "bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
                         } text-white hover:shadow-xl transform hover:scale-105`}
+                        onClick={() => (window.location.href = "/talk-to-us")}
                       >
                         {pkg.isPopular && <Star className="h-4 w-4 mr-2" />}
                         GET STARTED

@@ -89,10 +89,12 @@ export default function Header() {
         </nav>
 
         <div className="hidden md:flex items-center space-x-4">
-          <Button variant="ghost" className="text-white hover:text-black">
+          <Button variant="ghost" className="text-white hover:text-black"
+          onClick={() => window.open("tel:7738420349")}
+          >
             7738420349
           </Button>
-          <Button variant="outline" className="bg-white text-emerald-600 hover:bg-white/90">
+          <Button variant="outline" className="bg-white text-emerald-600 hover:bg-white/90" onClick={() => window.open("tel:7738420349")}>
             REQUEST A CALL BACK
           </Button>
         </div>
@@ -207,11 +209,12 @@ export default function Header() {
                 <Button
                   variant="outline"
                   className="w-full flex items-center justify-center gap-2 py-6 text-lg border-emerald-200 hover:bg-emerald-50"
+                  onClick={() => window.open("tel:7738420349")}
                 >
                   <PhoneCall className="h-5 w-5" />
                   7738420349
                 </Button>
-                <Button className="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-6 text-lg">
+                <Button className="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-6 text-lg" onClick={() => window.open("tel:7738420349")}>
                   REQUEST A CALL BACK
                 </Button>
               </div>

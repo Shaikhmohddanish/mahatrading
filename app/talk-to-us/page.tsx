@@ -280,7 +280,7 @@ export default function TalkToUsPage() {
                   </Button>
                   <Button
                     variant="outline"
-                    className="border-white text-white hover:bg-white hover:text-green-600 py-3 px-8 text-lg font-semibold rounded-xl"
+                    className="border-white text-green-600 hover:bg-white hover:text-green-600 py-3 px-8 text-lg font-semibold rounded-xl"
                     onClick={() => (window.location.href = "/packages/options")}
                   >
                     View Options Packages
