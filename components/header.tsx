@@ -35,17 +35,17 @@ export default function Header() {
         </div>
 
         <nav className="hidden md:flex items-center space-x-6">
-          <Link href="/" className="text-sm font-medium transition-colors hover:text-white/80">
+          <Link href="/" className="text-sm font-medium transition-colors hover:text-black">
             Home
           </Link>
-          <Link href="/user-consent" className="text-sm font-medium transition-colors hover:text-white/80">
+          <Link href="/user-consent" className="text-sm font-medium transition-colors hover:text-black">
             User Consent
           </Link>
           <DropdownMenu open={isDropdownOpen} onOpenChange={setIsDropdownOpen}>
             <DropdownMenuTrigger asChild>
               <Button
                 variant="ghost"
-                className="text-sm font-medium transition-colors hover:text-white/80 flex items-center gap-1 p-0"
+                className="text-sm font-medium transition-colors hover:text-black flex items-center gap-1 p-0"
               >
                 Package <ChevronDown className="h-4 w-4" />
               </Button>
@@ -83,13 +83,13 @@ export default function Header() {
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
-          <Link href="/talk-to-us" className="text-sm font-medium transition-colors hover:text-white/80">
+          <Link href="/talk-to-us" className="text-sm font-medium transition-colors hover:text-black">
             Talk To Us
           </Link>
         </nav>
 
         <div className="hidden md:flex items-center space-x-4">
-          <Button variant="ghost" className="text-white hover:text-white/80">
+          <Button variant="ghost" className="text-white hover:text-black">
             7738420349
           </Button>
           <Button variant="outline" className="bg-white text-emerald-600 hover:bg-white/90">

@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Phone, Mail, MapPin } from "lucide-react"
+import { Phone, Mail, MapPin, MessageCircle } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <Link href="/" className="inline-block">
-              <Image src="/logo.png" alt="Maha Tradrings" width={180} height={50} className="h-12 w-auto" />
+              <Image src="/logo.png" alt="Maha Tradings" width={180} height={50} className="h-12 w-auto" />
             </Link>
             <p className="text-sm">
               ODR Portal (Securities Market Approach for Resolution through ODR Portal) can be accessed via the
@@ -110,7 +110,7 @@ export default function Footer() {
               <li className="flex items-start">
                 <Phone className="h-5 w-5 mr-2 mt-0.5" />
                 <div>
-                  <p className="font-medium">7738420349</p>
+                  <p className="font-medium">8108556625</p>
                   <p className="text-xs">Mon-Fri : 09:00 AM - 06:00 PM</p>
                   <p className="text-xs">Sat & Sun - Closed</p>
                 </div>
@@ -118,7 +118,7 @@ export default function Footer() {
               <li className="flex items-start">
                 <Mail className="h-5 w-5 mr-2 mt-0.5" />
                 <div>
-                  <p className="font-medium">info@mahatradrings.com</p>
+                  <p className="font-medium">info@mahatradings.com</p>
                   <p className="text-xs">Customer support</p>
                 </div>
               </li>
@@ -134,9 +134,31 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/20 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm">Maha Tradrings Trading Research</p>
-          <p className="text-sm mt-2 md:mt-0">© Copyright 2025, All Rights Reserved by Maha Tradrings.</p>
+          <p className="text-sm">Maha Tradings Trading Research</p>
+          <p className="text-sm mt-2 md:mt-0">© Copyright 2025, All Rights Reserved by Maha Tradings.</p>
         </div>
+      </div>
+      {/* Floating Action Buttons */}
+      <div className="fixed bottom-6 left-0 right-0 flex justify-between px-4 z-50 pointer-events-none">
+        {/* Phone Button */}
+        <a
+          href="tel:+918108556625"
+          className="bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 pointer-events-auto"
+          aria-label="Call us"
+        >
+          <Phone className="h-6 w-6" />
+        </a>
+
+        {/* WhatsApp Button */}
+        <a
+          href="https://wa.me/918108556625?text=Hi%20Maha%20Tradings,%20I%20would%20like%20to%20know%20more%20about%20your%20trading%20research%20services."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 pointer-events-auto"
+          aria-label="Chat on WhatsApp"
+        >
+          <MessageCircle className="h-6 w-6" />
+        </a>
       </div>
     </footer>
   )
