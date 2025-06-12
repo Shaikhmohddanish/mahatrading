@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <Link href="/" className="inline-block">
-              <Image src="/logo.png" alt="Capital Grow" width={180} height={50} className="h-12 w-auto" />
+              <Image src="/logo.png" alt="Maha Tradrings" width={180} height={50} className="h-12 w-auto" />
             </Link>
             <p className="text-sm">
               ODR Portal (Securities Market Approach for Resolution through ODR Portal) can be accessed via the
@@ -118,7 +118,7 @@ export default function Footer() {
               <li className="flex items-start">
                 <Mail className="h-5 w-5 mr-2 mt-0.5" />
                 <div>
-                  <p className="font-medium">compliance@capital-grow.com</p>
+                  <p className="font-medium">compliance@mahatradrings.com</p>
                   <p className="text-xs">Customer support</p>
                 </div>
               </li>
@@ -134,8 +134,8 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/20 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm">Capital Grow Trading Research</p>
-          <p className="text-sm mt-2 md:mt-0">© Copyright 2025, All Rights Reserved by Capital Grow.</p>
+          <p className="text-sm">Maha Tradrings Trading Research</p>
+          <p className="text-sm mt-2 md:mt-0">© Copyright 2025, All Rights Reserved by Maha Tradrings.</p>
         </div>
       </div>
     </footer>

@@ -16,17 +16,17 @@ export default function UserConsentPage() {
             <Card className="mb-8">
               <CardContent className="p-8 space-y-6">
                 <p className="text-lg leading-relaxed">
-                  By accessing or using the <span className="font-semibold text-green-600">Capital-Grow</span> website,
+                  By accessing or using the <span className="font-semibold text-green-600">Maha Tradrings</span> website,
                   mobile application, or subscribing to our research services, you agree to adhere to the terms and
                   conditions, legal disclaimer, disclosures, policies, and user consent outlined on the official
-                  Capital-Grow platform. Please note, we may update these terms from time to time, and your continued
+                  Maha Tradrings platform. Please note, we may update these terms from time to time, and your continued
                   use of our services will signify your acceptance of the revised terms. We encourage you to regularly
                   check the sections related to 'Terms and Conditions,' 'Legal Disclaimer,' 'Disclosure,' 'User
                   Consent,' 'Refund Policy,' and 'Privacy Policy' on our website to stay informed.
                 </p>
 
                 <p className="text-lg leading-relaxed">
-                  The term <span className="font-semibold">Capital-Grow</span> refers to our website, mobile app, its
+                  The term <span className="font-semibold">Maha Tradrings</span> refers to our website, mobile app, its
                   owners, and associates. "You" refers to the user, subscriber, or visitor of our website, app, or
                   research services.
                 </p>
@@ -43,7 +43,7 @@ export default function UserConsentPage() {
                     Subscription & Information Accuracy:
                   </h2>
                   <p className="text-gray-700 leading-relaxed">
-                    By subscribing to Capital-Grow's services, you confirm that the information provided during the
+                    By subscribing to Maha Tradrings's services, you confirm that the information provided during the
                     subscription process is accurate. In the event of any misleading or incorrect information, you
                     acknowledge that you may be held liable. You also agree to notify us of any changes to the details
                     provided.
@@ -61,7 +61,7 @@ export default function UserConsentPage() {
                   </h2>
                   <p className="text-gray-700 leading-relaxed">
                     You acknowledge that share market trading and investing carry significant risks, including the loss
-                    of partial or entire capital. You accept that Capital Grow provides research and technical analysis
+                    of partial or entire capital. You accept that Maha Tradrings provides research and technical analysis
                     only as a reference, not investment advice. The decision to execute trades based on our alerts is
                     entirely yours, including the trade volume and stock selection. You bear full responsibility for the
                     results of your trading activities, whether profitable or otherwise.
@@ -78,7 +78,7 @@ export default function UserConsentPage() {
                     Accuracy & Expectations:
                   </h2>
                   <p className="text-gray-700 leading-relaxed">
-                    You understand and agree that Capital-Grow and its team do not guarantee the accuracy or consistency
+                    You understand and agree that Maha Tradrings and its team do not guarantee the accuracy or consistency
                     of any research alerts provided. Any accuracy percentages communicated via email, advertisements, or
                     mobile app are for reference only and subject to fluctuation. There is no commitment to maintain a
                     fixed accuracy rate for research alerts or trading recommendations.
@@ -95,7 +95,7 @@ export default function UserConsentPage() {
                     Responsibility for Trades:
                   </h2>
                   <p className="text-gray-700 leading-relaxed">
-                    You accept that Capital-Grow is not responsible for executing trades on your behalf. Any decisions
+                    You accept that Maha Tradrings is not responsible for executing trades on your behalf. Any decisions
                     to buy or sell stocks in your trading or Demat account during your subscription to our research
                     services are entirely your own. Any gains or losses incurred from these trades are solely your
                     responsibility.
@@ -112,7 +112,7 @@ export default function UserConsentPage() {
                     Research Services Only:
                   </h2>
                   <p className="text-gray-700 leading-relaxed">
-                    The research services provided by Capital-Grow are not to be mistaken for personalized investment
+                    The research services provided by Maha Tradrings are not to be mistaken for personalized investment
                     advice. We offer trading analysis for reference only. You acknowledge that any profits or losses
                     that result from trades made by following our alerts are entirely your liability.
                   </p>
@@ -129,7 +129,7 @@ export default function UserConsentPage() {
                   </h2>
                   <p className="text-gray-700 leading-relaxed">
                     You confirm that you fully understand the risks associated with trading and investing in the stock
-                    market, and you do not expect guaranteed or fixed returns from Capital-Grow's research alerts. You
+                    market, and you do not expect guaranteed or fixed returns from Maha Tradrings's research alerts. You
                     acknowledge that trading based on our research may result in partial or complete loss of your
                     invested capital.
                   </p>
@@ -145,7 +145,7 @@ export default function UserConsentPage() {
                     No Refund Policy:
                   </h2>
                   <p className="text-gray-700 leading-relaxed">
-                    The fees paid for Capital-Grow's research services are non-refundable under any circumstances. You
+                    The fees paid for Maha Tradrings's research services are non-refundable under any circumstances. You
                     accept that these fees are strictly for accessing research services and not for direct stock market
                     investment.
                   </p>
@@ -161,10 +161,10 @@ export default function UserConsentPage() {
                     Legal Liability & Consent:
                   </h2>
                   <p className="text-gray-700 leading-relaxed">
-                    You agree that Capital-Grow and its owners, employees, or associates cannot be held responsible for
+                    You agree that Maha Tradrings and its owners, employees, or associates cannot be held responsible for
                     any losses you may incur as a result of trading activities based on our research alerts. You also
                     confirm that you will not disclose your Demat or trading account credentials to anyone and that you
-                    alone are responsible for managing your account. You agree that Capital-Grow has not guaranteed or
+                    alone are responsible for managing your account. You agree that Maha Tradrings has not guaranteed or
                     assured any profits, and you will not file any legal complaint or claim if you incur losses during
                     your trading activities.
                   </p>
@@ -181,9 +181,9 @@ export default function UserConsentPage() {
                   </h2>
                   <p className="text-gray-700 leading-relaxed">
                     By clicking "Yes, I Agree," you confirm that you have read, understood, and accepted all the terms
-                    and conditions, disclaimers, disclosures, and policies mentioned on the Capital-Grow website and
+                    and conditions, disclaimers, disclosures, and policies mentioned on the Maha Tradrings website and
                     mobile app. This consent will be recorded and considered final for all future services and
-                    transactions with Capital-Grow.
+                    transactions with Maha Tradrings.
                   </p>
                 </CardContent>
               </Card>
@@ -193,8 +193,8 @@ export default function UserConsentPage() {
           <div className="mt-12 text-center">
             <p className="text-gray-500 text-sm">
               Last updated: January 2025 | For any questions regarding this consent, please contact us at{" "}
-              <a href="mailto:compliance@capital-grow.com" className="text-green-600 hover:underline">
-                compliance@capital-grow.com
+              <a href="mailto:compliance@mahatradrings.com" className="text-green-600 hover:underline">
+                compliance@mahatradrings.com
               </a>
             </p>
           </div>

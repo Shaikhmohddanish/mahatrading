@@ -541,7 +541,7 @@ export default function InvestorCharterPage() {
                 </div>
                 <div className="bg-white p-6 rounded-lg border-l-4 border-blue-500">
                   <p className="text-lg text-gray-800 leading-relaxed mb-4">
-                    Capital-Grow Trading Research is a SEBI registered Research Analyst. Always verify the registration
+                    Maha Tradrings Trading Research is a SEBI registered Research Analyst. Always verify the registration
                     status of any Research Analyst before engaging their services.
                   </p>
                   <div className="flex items-center">
@@ -593,10 +593,10 @@ export default function InvestorCharterPage() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a
-                    href="mailto:compliance@capital-grow.com"
+                    href="mailto:compliance@mahatradrings.com"
                     className="bg-white text-green-600 hover:bg-gray-100 py-3 px-8 text-lg font-semibold rounded-xl transition-all duration-300 inline-block"
                   >
-                    Email: compliance@capital-grow.com
+                    Email: compliance@mahatradrings.com
                   </a>
                   <a
                     href="tel:8108556625"
