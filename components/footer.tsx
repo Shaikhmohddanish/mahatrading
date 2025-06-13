@@ -125,7 +125,7 @@ export default function Footer() {
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-2 mt-0.5" />
                 <div>
-                  <p className="font-medium">Kopar Khairane,navi Mumbai,400709</p>
+                  <p className="font-medium">Kopar Khairane, Navi Mumbai – 400709</p>
                   <p className="text-xs">Main office location</p>
                 </div>
               </li>

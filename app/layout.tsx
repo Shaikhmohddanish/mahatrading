@@ -9,8 +9,8 @@ import ScrollToTop from "@/components/scroll-to-top"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Maha Tradrings - Expert Share Market Trading Insights",
-  description: "Get expert share market trading insights with Maha Tradrings",
+  title: "Maha Tradings - Expert Stock Market Trading Insights",
+  description: "Get expert stock market trading insights with Maha Tradings",
     generator: 'v0.dev'
 }
 

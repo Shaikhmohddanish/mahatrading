@@ -29,10 +29,10 @@ export default function Home() {
             <ScrollAnimation direction="left">
               <div className="space-y-4">
                 <h1 className="text-4xl md:text-6xl font-bold tracking-tighter">
-                  Join Us for Expert Share Market Trading Insights
+                  Join Us for Expert Stock Market Trading Insights
                 </h1>
                 <p className="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Keep track of every trade with Maha Tradrings, where transparency and security are our top priorities.
+                  Keep track of every trade with Maha Tradings, where transparency and security are our top priorities.
                   Rest assured that your funds are protected from loss and manipulation with our state-of-the-art
                   security measures.
                 </p>
@@ -120,12 +120,12 @@ export default function Home() {
               <div className="space-y-4">
                 <h2 className="text-3xl md:text-4xl font-bold tracking-tighter">Why Choose Us?</h2>
                 <p className="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Welcome to <span className="font-semibold">Maha Tradrings</span>, your trusted partner in share market
-                  research and analysis. At Maha Tradrings, we are dedicated to providing top-notch, data-driven insights
+                  Welcome to <span className="font-semibold">Maha Tradings</span>, your trusted partner in stock market
+                  research and analysis. At Maha Tradings, we are dedicated to providing top-notch, data-driven insights
                   through advanced tools and methodologies. Our expert team leverages deep industry experience to
                   deliver precise and actionable recommendations, ensuring you make informed investment decisions. We
                   prioritize accuracy over exaggeration, offering recommendations that align with your unique risk
-                  profile and investment goals. Join the Maha Tradrings community today and stay ahead in the market with
+                  profile and investment goals. Join the Maha Tradings community today and stay ahead in the market with
                   expert guidance tailored just for you.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
@@ -187,12 +187,12 @@ export default function Home() {
           <ScrollAnimation direction="left">
             <div className="max-w-3xl mx-auto space-y-4">
               <p className="text-lg">
-                Dear Valued Customer, Greetings from <span className="font-semibold">Maha Tradrings</span>!
+                Dear Valued Customer, Greetings from <span className="font-semibold">Maha Tradings</span>!
               </p>
               <p>
                 Your trust is our top priority, and we strive to deliver a secure and seamless experience with our
                 services. To safeguard your interactions with us, please note that all official offers, promotions, and
-                communications related to sales and discounts from <span className="font-semibold">Maha Tradrings</span>{" "}
+                communications related to sales and discounts from <span className="font-semibold">Maha Tradings</span>{" "}
                 will be sent only through our verified email address:{" "}
                 <a href="mailto:info@mahatradrings.com" className="text-green-600 hover:underline">
                   info@mahatradrings.com
@@ -221,7 +221,7 @@ export default function Home() {
                 .
               </p>
               <p>
-                Thank you for your attention and continued trust in <span className="font-semibold">Maha Tradrings</span>.
+                Thank you for your attention and continued trust in <span className="font-semibold">Maha Tradings</span>.
               </p>
             </div>
           </ScrollAnimation>
@@ -237,9 +237,9 @@ export default function Home() {
                 <h2 className="text-3xl md:text-4xl font-bold tracking-tighter">Request a Free Consultation</h2>
                 <p className="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Take advantage of a free consultation with the expert team at{" "}
-                  <span className="font-semibold">Maha Tradrings</span>! Receive personalized, professional support
+                  <span className="font-semibold">Maha Tradings</span>! Receive personalized, professional support
                   tailored to your unique financial and trading needs. Our dedicated advisors are here to guide you
-                  every step of the way, helping you make informed decisions and navigate the share market with
+                  every step of the way, helping you make informed decisions and navigate the stock market with
                   confidence. Don't miss this opportunity for expert guidance—schedule your consultation today!
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">

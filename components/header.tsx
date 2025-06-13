@@ -30,7 +30,7 @@ export default function Header() {
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
         <div className="flex items-center">
           <Link href="/" className="flex items-center space-x-2">
-            <Image src="/logo.png" alt="Maha Tradrings" width={150} height={40} className="h-10 w-auto" />
+            <Image src="/logo.png" alt="Maha Tradings" width={150} height={40} className="h-10 w-auto" />
           </Link>
         </div>
 
@@ -108,7 +108,7 @@ export default function Header() {
           </SheetTrigger>
           <SheetContent side="right" className="w-[300px] sm:w-[400px] border-l-emerald-600 border-l-4 p-0">
             <div className="bg-gradient-to-r from-emerald-600 to-emerald-500 p-6">
-              <Image src="/logo.png" alt="Maha Tradrings" width={150} height={40} className="h-10 w-auto" />
+              <Image src="/logo.png" alt="Maha Tradings" width={150} height={40} className="h-10 w-auto" />
             </div>
 
             <nav className="flex flex-col p-6">
