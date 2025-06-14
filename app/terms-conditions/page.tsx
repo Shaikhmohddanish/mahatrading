@@ -546,7 +546,7 @@ export default function TermsConditionsPage() {
                         <tr>
                           <td className="border border-gray-300 p-4 text-center">
                             Forward suspicious emails asking for sensitive information to{" "}
-                            <span className="text-blue-600">info@mahatradrings.com</span>
+                            <span className="text-blue-600">info@mahatradings.com</span>
                           </td>
                           <td className="border border-gray-300 p-4 text-center">
                             Do not reveal your personal information Customer IDs, Passwords, and One Time Passwords (OTP)
@@ -555,7 +555,7 @@ export default function TermsConditionsPage() {
                         </tr>
                         <tr className="bg-gray-50">
                           <td className="border border-gray-300 p-4 text-center">
-                            Write to us at <span className="text-blue-600">info@mahatradrings.com</span>, if you notice a
+                            Write to us at <span className="text-blue-600">info@mahatradings.com</span>, if you notice a
                             duplicate Maha Tradings or webpage
                           </td>
                           <td className="border border-gray-300 p-4 text-center">
@@ -995,10 +995,10 @@ export default function TermsConditionsPage() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a
-                    href="mailto:info@mahatradrings.com"
+                    href="mailto:info@mahatradings.com"
                     className="bg-white text-green-600 hover:bg-gray-100 py-3 px-8 text-lg font-semibold rounded-xl transition-all duration-300 inline-block"
                   >
-                    Email: info@mahatradrings.com
+                    Email: info@mahatradings.com
                   </a>
                   <a
                     href="tel:7738420349"
