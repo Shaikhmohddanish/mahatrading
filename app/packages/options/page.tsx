@@ -344,7 +344,16 @@ export default function OptionsPackagesPage() {
                             ? "bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 shadow-lg"
                             : "bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
                         } text-white hover:shadow-xl transform hover:scale-105`}
-                        onClick={() => (window.location.href = "/talk-to-us")}
+                        onClick={() => {
+                          const phone = "917738420349"; // WhatsApp number in international format, no +
+                          const message = encodeURIComponent(
+                            `Hello, I am interested in the following package from Maha Tradings:%0A\n` +
+                            `Package: ${pkg.title} - ${pkg.subtitle}%0A` +
+                            `Current Price: ${pkg.currentPrice}%0A` +
+                            `Features:%0A- ${pkg.features.join("%0A- ")}%0A\nPlease provide more details. Thank you!`
+                          );
+                          window.open(`https://wa.me/${phone}?text=${message}`, "_blank");
+                        }}
                       >
                         {pkg.isPopular && <Star className="h-4 w-4 mr-2" />}
                         GET STARTED
