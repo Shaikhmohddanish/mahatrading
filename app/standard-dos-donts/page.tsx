@@ -17,7 +17,7 @@ export default function StandardDosDontsPage() {
                 Essential Do's & Don'ts for Smart Trading and Investing
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                Before embarking on your stock market journey using Maha Tradrings's research alerts and reports, it's
+                Before embarking on your stock market journey using Maha Tradings's research alerts and reports, it's
                 crucial to follow best practices for maximizing success and minimizing risk in trading and investing.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
@@ -165,10 +165,10 @@ export default function StandardDosDontsPage() {
                     <div>
                       <h3 className="text-xl font-bold mb-2">Don't Share Your Login Credentials:</h3>
                       <p className="text-gray-700 leading-relaxed">
-                        Maha Tradrings will never ask for your D-mat/Trading account login ID or password. If anyone
+                        Maha Tradings will never ask for your D-mat/Trading account login ID or password. If anyone
                         requests this information, immediately decline and report it to us at{" "}
-                        <a href="mailto:info@mahatradrings.com" className="text-blue-600 hover:underline">
-                          info@mahatradrings.com
+                        <a href="mailto:info@mahatradings.com" className="text-blue-600 hover:underline">
+                          info@mahatradings.com
                         </a>
                         .
                       </p>
@@ -206,7 +206,7 @@ export default function StandardDosDontsPage() {
                   <h2 className="text-3xl font-bold text-green-700">All Recommendations via Mobile App Only</h2>
                 </div>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  All our research recommendations are delivered exclusively through the Maha Tradrings mobile app. Please
+                  All our research recommendations are delivered exclusively through the Maha Tradings mobile app. Please
                   download the app to receive alerts and updates, and contact our customer support team for any queries.
                 </p>
               </CardContent>
@@ -220,7 +220,7 @@ export default function StandardDosDontsPage() {
                 <h2 className="text-3xl font-bold mb-4">Smart Trading for Long-term Success</h2>
                 <p className="text-xl leading-relaxed">
                   By adhering to these practices, you can enhance your chances of long-term success in the stock market.
-                  Maha Tradrings encourages you to prioritize risk management and smart investing for a profitable trading
+                  Maha Tradings encourages you to prioritize risk management and smart investing for a profitable trading
                   experience.
                 </p>
               </CardContent>

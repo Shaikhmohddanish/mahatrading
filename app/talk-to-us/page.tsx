@@ -175,10 +175,10 @@ export default function TalkToUsPage() {
                           <h3 className="font-semibold text-lg">Email</h3>
                           <p className="text-gray-600">Send us an email anytime</p>
                           <a
-                            href="mailto:info@mahatradrings.com"
+                            href="mailto:info@mahatradings.com"
                             className="text-green-600 hover:underline font-semibold"
                           >
-                            info@mahatradrings.com
+                            info@mahatradings.com
                           </a>
                         </div>
                       </div>
@@ -220,7 +220,7 @@ export default function TalkToUsPage() {
                       <Button
                         variant="outline"
                         className="w-full border-green-600 text-green-600 hover:bg-green-600 hover:text-white py-3 text-lg font-semibold rounded-xl"
-                        onClick={() => window.open("mailto:info@mahatradrings.com")}
+                        onClick={() => window.open("mailto:info@mahatradings.com")}
                       >
                         <Mail className="h-5 w-5 mr-2" />
                         Send Email
@@ -268,7 +268,7 @@ export default function TalkToUsPage() {
               <CardContent className="p-8 text-center">
                 <h2 className="text-3xl font-bold mb-4">Ready to Start Your Trading Journey?</h2>
                 <p className="text-xl mb-6 opacity-90">
-                  Join thousands of successful traders who trust Maha Tradrings for expert market insights and research
+                  Join thousands of successful traders who trust Maha Tradings for expert market insights and research
                   alerts.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -14,7 +14,7 @@ export default function RefundPolicyPage() {
             <div className="text-center mb-12">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">Refund Policy</h1>
               <p className="text-lg text-gray-600 leading-relaxed">
-                At Maha Tradrings, we prioritize delivering the best possible services to our clients, but it's important
+                At Maha Tradings, we prioritize delivering the best possible services to our clients, but it's important
                 to note that we do not offer any guaranteed returns on stock market research calls. As a result, no
                 refunds will be provided on any of our subscription packages, regardless of individual performance or
                 outcomes.
@@ -32,7 +32,7 @@ export default function RefundPolicyPage() {
                 </div>
                 <div className="space-y-4">
                   <p className="text-lg text-gray-700 leading-relaxed">
-                    Once you subscribe to any of Maha Tradrings's research services and make the corresponding payment,
+                    Once you subscribe to any of Maha Tradings's research services and make the corresponding payment,
                     the service cannot be canceled or refunded under any circumstances. We strongly encourage our
                     clients to thoroughly evaluate our services before making any payment decisions.
                   </p>
@@ -121,14 +121,14 @@ export default function RefundPolicyPage() {
                 </div>
                 <div className="space-y-4">
                   <p className="text-lg text-gray-700 leading-relaxed">
-                    At Maha Tradrings, we believe in full transparency. We consistently communicate the inherent risks
+                    At Maha Tradings, we believe in full transparency. We consistently communicate the inherent risks
                     involved in stock market trading and the possibility of capital loss. Therefore, clients should only
                     subscribe after fully understanding these risks.
                   </p>
                   <p className="text-lg text-gray-700 leading-relaxed">
                     If you have any questions or concerns, feel free to reach out to our customer support team at{" "}
-                    <a href="mailto:info@mahatradrings.com" className="text-blue-600 hover:underline font-semibold">
-                      info@mahatradrings.com
+                    <a href="mailto:info@mahatradings.com" className="text-blue-600 hover:underline font-semibold">
+                      info@mahatradings.com
                     </a>{" "}
                     for clarification before making any payment.
                   </p>
@@ -185,10 +185,10 @@ export default function RefundPolicyPage() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a
-                    href="mailto:info@mahatradrings.com"
+                    href="mailto:info@mahatradings.com"
                     className="bg-white text-green-600 hover:bg-gray-100 py-3 px-8 text-lg font-semibold rounded-xl transition-all duration-300 inline-block"
                   >
-                    Email: info@mahatradrings.com
+                    Email: info@mahatradings.com
                   </a>
                   <a
                     href="tel:7738420349"

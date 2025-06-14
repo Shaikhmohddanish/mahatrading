@@ -28,7 +28,7 @@ export default function GrievanceRedressalPage() {
             <div className="text-center mb-12">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">Grievance Redressal Process</h1>
               <p className="text-lg text-gray-600 leading-relaxed max-w-4xl mx-auto">
-                At Maha Tradrings Trading Research, we prioritize exceptional investor service and strive to maintain high
+                At Maha Tradings, we prioritize exceptional investor service and strive to maintain high
                 standards across all touchpoints. Effective and prompt service is crucial for maintaining investor
                 relationships and satisfaction, especially within our Direct-to-Investor model.
               </p>
@@ -162,10 +162,10 @@ export default function GrievanceRedressalPage() {
                           <div className="flex items-center">
                             <Mail className="h-5 w-5 text-blue-600 mr-2" />
                             <a
-                              href="mailto:info@mahatradrings.com"
+                              href="mailto:info@mahatradings.com"
                               className="text-blue-600 hover:underline font-semibold"
                             >
-                              info@mahatradrings.com
+                              info@mahatradings.com
                             </a>
                           </div>
                         </div>
@@ -190,10 +190,10 @@ export default function GrievanceRedressalPage() {
                         <p className="text-gray-700 leading-relaxed mb-3">
                           Clients can write to the Research Analyst at{" "}
                           <a
-                            href="mailto:info@mahatradrings.com"
+                            href="mailto:info@mahatradings.com"
                             className="text-green-600 hover:underline font-semibold"
                           >
-                            info@mahatradrings.com
+                            info@mahatradings.com
                           </a>{" "}
                           if the Investor does not receive a response within{" "}
                           <span className="font-semibold">10 business days</span> of writing to the Client Servicing
@@ -345,10 +345,10 @@ export default function GrievanceRedressalPage() {
                       <div>
                         <p className="font-semibold text-gray-800">Email Support</p>
                         <a
-                          href="mailto:info@mahatradrings.com"
+                          href="mailto:info@mahatradings.com"
                           className="text-green-600 hover:underline font-semibold"
                         >
-                          info@mahatradrings.com
+                          info@mahatradings.com
                         </a>
                       </div>
                     </div>
@@ -404,7 +404,7 @@ export default function GrievanceRedressalPage() {
                 <p className="text-xl mb-6 opacity-90">We're here to help resolve your concerns quickly and fairly</p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a
-                    href="mailto:info@mahatradrings.com"
+                    href="mailto:info@mahatradings.com"
                     className="bg-white text-green-600 hover:bg-gray-100 py-3 px-8 text-lg font-semibold rounded-xl transition-all duration-300 inline-block"
                   >
                     Email Your Complaint

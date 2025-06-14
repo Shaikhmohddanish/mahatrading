@@ -379,14 +379,14 @@ export default function OptionsPackagesPage() {
                 </div>
                 <div className="max-w-4xl mx-auto space-y-6 text-lg leading-relaxed text-gray-700">
                   <p className="text-xl font-semibold text-center text-gray-900">
-                    Dear Customer, Greetings from Maha Tradrings!!!
+                    Dear Customer, Greetings from Maha Tradings!!!
                   </p>
                   <p>
                     We value your trust and want to ensure that you have the best possible experience with our services.
                     Please be informed that all our offers, promotions, discounts, and sales-related email
-                    communications from Maha Tradrings will only be sent from the email address:{" "}
-                    <a href="mailto:info@mahatradrings.com" className="text-blue-600 hover:underline font-semibold">
-                      info@mahatradrings.com
+                    communications from Maha Tradings will only be sent from the email address:{" "}
+                    <a href="mailto:info@mahatradings.com" className="text-blue-600 hover:underline font-semibold">
+                      info@mahatradings.com
                     </a>
                     .
                   </p>
@@ -395,8 +395,8 @@ export default function OptionsPackagesPage() {
                     channels for malicious purposes. To protect yourself from potential phishing scams or fraudulent
                     activities, please be cautious and only respond to emails originating from the specified official
                     email address:{" "}
-                    <a href="mailto:info@mahatradrings.com" className="text-blue-600 hover:underline font-semibold">
-                      info@mahatradrings.com
+                    <a href="mailto:info@mahatradings.com" className="text-blue-600 hover:underline font-semibold">
+                      info@mahatradings.com
                     </a>
                     .
                   </p>
@@ -408,10 +408,10 @@ export default function OptionsPackagesPage() {
                     </a>{" "}
                     or email us at{" "}
                     <a
-                      href="mailto:info@mahatradrings.com"
+                      href="mailto:info@mahatradings.com"
                       className="text-blue-600 hover:underline font-semibold"
                     >
-                      info@mahatradrings.com
+                      info@mahatradings.com
                     </a>
                     .
                   </p>

@@ -110,7 +110,7 @@ export default function Footer() {
               <li className="flex items-start">
                 <Phone className="h-5 w-5 mr-2 mt-0.5" />
                 <div>
-                  <p className="font-medium">8108556625</p>
+                  <p className="font-medium">7738420349</p>
                   <p className="text-xs">Mon-Fri : 09:00 AM - 06:00 PM</p>
                   <p className="text-xs">Sat & Sun - Closed</p>
                 </div>
@@ -134,7 +134,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/20 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm">Maha Tradings Trading Research</p>
+          <p className="text-sm">Maha Tradings</p>
           <p className="text-sm mt-2 md:mt-0">© Copyright 2025, All Rights Reserved by Maha Tradings.</p>
         </div>
       </div>
@@ -142,7 +142,7 @@ export default function Footer() {
       <div className="fixed bottom-6 left-0 right-0 flex justify-between px-4 z-50 pointer-events-none">
         {/* Phone Button */}
         <a
-          href="tel:+918108556625"
+          href="tel:+917738420349"
           className="bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 pointer-events-auto"
           aria-label="Call us"
         >
@@ -151,7 +151,7 @@ export default function Footer() {
 
         {/* WhatsApp Button */}
         <a
-          href="https://wa.me/918108556625?text=Hi%20Maha%20Tradings,%20I%20would%20like%20to%20know%20more%20about%20your%20trading%20research%20services."
+          href="https://wa.me/917738420349?text=Hi%20Maha%20Tradings,%20I%20would%20like%20to%20know%20more%20about%20your%20trading%20research%20services."
           target="_blank"
           rel="noopener noreferrer"
           className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 pointer-events-auto"
