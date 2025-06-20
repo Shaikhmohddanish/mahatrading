@@ -86,6 +86,9 @@ export default function Header() {
           <Link href="/talk-to-us" className="text-sm font-medium transition-colors hover:text-black">
             Talk To Us
           </Link>
+          <Link href="/articles" className="text-sm font-medium transition-colors hover:text-black">
+            Articles
+          </Link>
         </nav>
 
         <div className="hidden md:flex items-center space-x-4">
@@ -200,6 +203,17 @@ export default function Header() {
                 >
                   <Phone className="h-5 w-5" />
                   Talk To Us
+                </Link>
+
+                <Link
+                  href="/articles"
+                  className={`flex items-center gap-3 px-4 py-3 text-lg font-medium rounded-lg transition-all duration-200 hover:bg-emerald-50`}
+                  onClick={() => {
+                    setIsOpen(false)
+                  }}
+                >
+                  <FileText className="h-5 w-5" />
+                  Articles
                 </Link>
               </div>
 
