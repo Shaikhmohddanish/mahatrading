@@ -1,41 +1,122 @@
 "use client"
 
-import type React from "react"
-
-import { useState } from "react"
+import { useState, useEffect, useRef } from "react"
+import { useForm } from "react-hook-form"
+import { zodResolver } from "@hookform/resolvers/zod"
+import * as z from "zod"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Phone, Mail, MapPin, Clock, MessageCircle, Send } from "lucide-react"
+import { Phone, Mail, MapPin, Clock, MessageCircle, Send, CheckCircle, AlertCircle } from "lucide-react"
 import ScrollAnimation from "@/components/scroll-animation"
 
+// Form validation schema
+const formSchema = z.object({
+  name: z.string().min(2, { message: "Name must be at least 2 characters" }),
+  email: z.string().email({ message: "Please enter a valid email address" }),
+  phone: z.string().min(8, { message: "Please enter a valid phone number" }),
+  subject: z.string().min(5, { message: "Subject must be at least 5 characters" }),
+  message: z.string().min(10, { message: "Message must be at least 10 characters" }),
+})
+
+type FormValues = z.infer<typeof formSchema>
+
 export default function TalkToUsPage() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    subject: "",
-    message: "",
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle")
+  const [showLoader, setShowLoader] = useState(false)
+  const popupRef = useRef<HTMLDivElement | null>(null)
+
+  // Initialize form
+  const form = useForm<FormValues>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      name: "",
+      email: "",
+      phone: "",
+      subject: "",
+      message: "",
+    },
   })
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }))
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
+  // Handle form submission
+  const onSubmit = async (data: FormValues) => {
+    setIsSubmitting(true)
+    setShowLoader(true)
+    try {
+      const response = await fetch("/api/contact-proxy", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      })
+      if (!response.ok) throw new Error("Network response was not ok")
+      setSubmitStatus("success")
+      form.reset()
+    } catch (error) {
+      setSubmitStatus("error")
+    } finally {
+      setIsSubmitting(false)
+      setShowLoader(false)
+    }
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Handle form submission here
-    console.log("Form submitted:", formData)
-    // You can add actual form submission logic here
-  }
+  // Reset status after 5 seconds
+  useEffect(() => {
+    if (submitStatus !== "idle") {
+      const timer = setTimeout(() => {
+        setSubmitStatus("idle")
+      }, 5000)
+      return () => clearTimeout(timer)
+    }
+  }, [submitStatus])
 
   return (
     <div className="flex flex-col min-h-screen">
+      {showLoader && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
+          <div className="bg-white rounded-full p-6 shadow-lg animate-spin">
+            <svg className="h-10 w-10 text-green-600" fill="none" viewBox="0 0 24 24">
+              <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+              <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+          </div>
+        </div>
+      )}
+      {(submitStatus === "success" || submitStatus === "error") && (
+        <div
+          ref={popupRef}
+          className={`fixed top-8 left-1/2 z-50 -translate-x-1/2 px-6 py-4 rounded-xl shadow-2xl flex items-center gap-4 transition-all duration-300
+            ${submitStatus === "success" ? "bg-green-500/95 text-white border-2 border-green-700" : "bg-red-500/95 text-white border-2 border-red-700"}
+          `}
+          role="alert"
+          style={{ minWidth: 320, maxWidth: 400 }}
+        >
+          {submitStatus === "success" ? (
+            <>
+              <CheckCircle className="h-6 w-6 text-white" />
+              <span className="font-semibold">Message sent successfully! We'll get back to you soon.</span>
+            </>
+          ) : (
+            <>
+              <AlertCircle className="h-6 w-6 text-white" />
+              <span className="font-semibold">There was an error sending your message. Please try again.</span>
+            </>
+          )}
+          <button
+            className="ml-auto text-white/80 hover:text-white focus:outline-none text-2xl px-2"
+            onClick={() => setSubmitStatus("idle")}
+            aria-label="Dismiss"
+            style={{ lineHeight: 1 }}
+          >
+            ×
+          </button>
+        </div>
+      )}
       <div className="container mx-auto px-4 md:px-6 py-12">
         <div className="max-w-6xl mx-auto">
           {/* Header Section */}
@@ -58,8 +139,7 @@ export default function TalkToUsPage() {
                     <MessageCircle className="h-8 w-8 text-green-600 mr-3" />
                     <h2 className="text-2xl font-bold">Send us a Message</h2>
                   </div>
-
-                  <form onSubmit={handleSubmit} className="space-y-6">
+                  <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
                         <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
@@ -67,14 +147,14 @@ export default function TalkToUsPage() {
                         </label>
                         <Input
                           id="name"
-                          name="name"
+                          {...form.register("name")}
                           type="text"
-                          required
-                          value={formData.name}
-                          onChange={handleInputChange}
                           className="w-full"
                           placeholder="Enter your full name"
                         />
+                        {form.formState.errors.name && (
+                          <p className="text-red-600 text-xs mt-1">{form.formState.errors.name.message as string}</p>
+                        )}
                       </div>
                       <div>
                         <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
@@ -82,70 +162,95 @@ export default function TalkToUsPage() {
                         </label>
                         <Input
                           id="phone"
-                          name="phone"
+                          {...form.register("phone")}
                           type="tel"
-                          required
-                          value={formData.phone}
-                          onChange={handleInputChange}
                           className="w-full"
                           placeholder="Enter your phone number"
                         />
+                        {form.formState.errors.phone && (
+                          <p className="text-red-600 text-xs mt-1">{form.formState.errors.phone.message as string}</p>
+                        )}
                       </div>
                     </div>
-
                     <div>
                       <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
                         Email Address *
                       </label>
                       <Input
                         id="email"
-                        name="email"
+                        {...form.register("email")}
                         type="email"
-                        required
-                        value={formData.email}
-                        onChange={handleInputChange}
                         className="w-full"
                         placeholder="Enter your email address"
                       />
+                      {form.formState.errors.email && (
+                        <p className="text-red-600 text-xs mt-1">{form.formState.errors.email.message as string}</p>
+                      )}
                     </div>
-
                     <div>
                       <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
                         Subject *
                       </label>
                       <Input
                         id="subject"
-                        name="subject"
+                        {...form.register("subject")}
                         type="text"
-                        required
-                        value={formData.subject}
-                        onChange={handleInputChange}
                         className="w-full"
                         placeholder="What is this regarding?"
                       />
+                      {form.formState.errors.subject && (
+                        <p className="text-red-600 text-xs mt-1">{form.formState.errors.subject.message as string}</p>
+                      )}
                     </div>
-
                     <div>
                       <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
                         Message *
                       </label>
                       <Textarea
                         id="message"
-                        name="message"
-                        required
-                        value={formData.message}
-                        onChange={handleInputChange}
+                        {...form.register("message")}
                         className="w-full min-h-[120px]"
                         placeholder="Tell us how we can help you..."
                       />
+                      {form.formState.errors.message && (
+                        <p className="text-red-600 text-xs mt-1">{form.formState.errors.message.message as string}</p>
+                      )}
                     </div>
-
                     <Button
                       type="submit"
                       className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white py-3 text-lg font-semibold rounded-xl transition-all duration-300 hover:shadow-xl transform hover:scale-105"
+                      disabled={isSubmitting}
                     >
-                      <Send className="h-5 w-5 mr-2" />
-                      Send Message
+                      {isSubmitting ? (
+                        <span className="flex items-center">
+                          <svg
+                            className="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                          >
+                            <circle
+                              className="opacity-25"
+                              cx="12"
+                              cy="12"
+                              r="10"
+                              stroke="currentColor"
+                              strokeWidth="4"
+                            ></circle>
+                            <path
+                              className="opacity-75"
+                              fill="currentColor"
+                              d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                            ></path>
+                          </svg>
+                          Sending...
+                        </span>
+                      ) : (
+                        <>
+                          <Send className="h-5 w-5 mr-2" />
+                          Send Message
+                        </>
+                      )}
                     </Button>
                   </form>
                 </CardContent>
