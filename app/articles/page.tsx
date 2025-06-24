@@ -79,10 +79,9 @@ export default async function BlogPage(props: { searchParams?: { page?: string, 
             <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
               {posts.map((post, index) => (
                 <Card key={post._id} className="flex flex-col overflow-hidden border border-emerald-100 shadow-md hover:shadow-lg transition-shadow bg-white dark:bg-emerald-950">
-                  <div className="relative w-full aspect-video overflow-hidden bg-emerald-50 dark:bg-emerald-900">
-                    {post.featureImage ? (
+                  <div className="relative w-full aspect-video overflow-hidden bg-emerald-50 dark:bg-emerald-900">                    {post.featureImage ? (
                       <Image
-                        src={urlFor(post.featureImage).width(800).height(600).fit('max').auto('format').url()}
+                        src={urlFor(post.featureImage).url()}
                         alt={post.title}
                         fill
                         className="object-cover object-center w-full h-full transition-transform duration-300 hover:scale-105 rounded-t-lg"
