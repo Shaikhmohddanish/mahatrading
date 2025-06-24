@@ -84,16 +84,15 @@ export default async function BlogPage(props: { searchParams?: { page?: string, 
                         src={urlFor(post.featureImage).url()}
                         alt={post.title}
                         fill
-                        className="object-cover object-center w-full h-full transition-transform duration-300 hover:scale-105 rounded-t-lg"
+                        className="object-contain object-center w-full h-full transition-transform duration-300 hover:scale-105 rounded-t-lg"
                         sizes="(max-width: 768px) 100vw, 800px"
                         priority={index === 0}
                       />
-                    ) : (
-                      <Image
+                    ) : (                      <Image
                         src="/placeholder.svg"
                         alt={post.title}
                         fill
-                        className="object-cover object-center w-full h-full rounded-t-lg"
+                        className="object-contain object-center w-full h-full rounded-t-lg"
                       />
                     )}
                   </div>

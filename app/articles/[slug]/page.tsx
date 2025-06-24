@@ -69,12 +69,12 @@ export default async function ArticleDetailPage(props: Props) {
           <Carousel className="w-full aspect-[16/9] bg-gray-100">
             <CarouselContent>
               {article.images.map((img, idx) => (
-                <CarouselItem key={idx}>
-                  <div className="relative w-full h-64 sm:h-96">                    <Image
+                <CarouselItem key={idx}>                  <div className="relative w-full h-64 sm:h-96">
+                    <Image
                       src={urlFor(img).url()}
                       alt={article.title}
                       fill
-                      className="object-cover object-center w-full h-full rounded-t-lg shadow-md"
+                      className="object-contain object-center w-full h-full rounded-t-lg shadow-md"
                       priority={idx === 0}
                       sizes="100vw"
                       placeholder="blur"
@@ -87,12 +87,12 @@ export default async function ArticleDetailPage(props: Props) {
             <CarouselPrevious />
             <CarouselNext />
           </Carousel>
-        ) : article.featureImage ? (
-          <div className="relative w-full aspect-[16/9] bg-gray-100 flex items-center justify-center overflow-hidden">            <Image
+        ) : article.featureImage ? (          <div className="relative w-full aspect-[16/9] bg-gray-100 flex items-center justify-center overflow-hidden">
+            <Image
               src={urlFor(article.featureImage).url()}
               alt={article.title}
               fill
-              className="object-cover object-center w-full h-full rounded-t-lg shadow-md"
+              className="object-contain object-center w-full h-full rounded-t-lg shadow-md"
               priority
               sizes="100vw"
               placeholder="blur"
@@ -125,12 +125,12 @@ export default async function ArticleDetailPage(props: Props) {
               {sliderArticles.map((post: any, index: number) => (
                 <CarouselItem key={post._id} className="max-w-xs">
                   <Card className="flex flex-col overflow-hidden border border-emerald-100 shadow-md hover:shadow-lg transition-shadow bg-white dark:bg-emerald-950">
-                    <div className="relative w-full aspect-video overflow-hidden bg-emerald-50 dark:bg-emerald-900">
-                      {post.featureImage ? (                        <Image
+                    <div className="relative w-full aspect-video overflow-hidden bg-emerald-50 dark:bg-emerald-900">                      {post.featureImage ? (
+                        <Image
                           src={urlFor(post.featureImage).url()}
                           alt={post.title}
                           fill
-                          className="object-cover object-center w-full h-full transition-transform duration-300 hover:scale-105 rounded-t-lg"
+                          className="object-contain object-center w-full h-full transition-transform duration-300 hover:scale-105 rounded-t-lg"
                           sizes="(max-width: 768px) 100vw, 800px"
                           priority={index === 0}
                         />
