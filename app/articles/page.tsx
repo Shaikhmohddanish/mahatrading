@@ -45,94 +45,160 @@ export default async function BlogPage(props: { searchParams?: { page?: string, 
   const posts = filteredPosts.slice(start, end)
 
   return (
-    <div className="container py-10 md:py-14 lg:py-20">
-      <div className="mx-auto max-w-6xl space-y-10">
-        {allPosts.length === 0 ? (
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-emerald-50 to-teal-50">
+      {/* Hero Section */}
+      <div className="relative bg-gradient-to-r from-emerald-600 via-green-600 to-teal-600 text-white py-20 md:py-28">
+        <div className="absolute inset-0 bg-black/10"></div>
+        <div className="relative container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-emerald-100 bg-clip-text text-transparent">
+              Our Blog
+            </h1>
+            <p className="text-xl md:text-2xl text-emerald-50 mb-8 leading-relaxed">
+              Discover insights, trends, and expert advice from our trading professionals
+            </p>
+            <div className="flex items-center justify-center gap-4 text-sm text-emerald-100">
+              <span>{allPosts.length} Articles</span>
+              <span>•</span>
+              <span>{categories.length - 1} Categories</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {allPosts.length === 0 ? (
+        <div className="container mx-auto px-4 py-20">
           <div className="flex flex-col items-center justify-center min-h-[40vh]">
             <div className="text-center py-16 text-xl text-gray-500 dark:text-gray-400 font-semibold">
               Sorry, there are no articles to display at this time. Please check back soon for updates and new content.
             </div>
           </div>
-        ) : (
-          <>
-            <div className="space-y-3 text-center">
-              <h1 className="text-4xl font-extrabold tracking-tight text-green-700 sm:text-5xl md:text-6xl mb-2">Our Blog</h1>
-              <p className="mx-auto max-w-2xl text-lg text-gray-600 dark:text-gray-300 md:text-xl">
-                Insights, inspiration, and practical advice from our design experts.
-              </p>
+        </div>
+      ) : (
+        <>
+          {/* Category Filter */}
+          <div className="sticky top-0 z-10 bg-white/80 backdrop-blur-md border-b border-emerald-100 py-4">
+            <div className="container mx-auto px-4">
+              <div className="flex flex-wrap items-center justify-center gap-2 max-w-4xl mx-auto">
+                {categories.map((category) => (
+                  <Button
+                    key={category}
+                    asChild
+                    variant={category === selectedCategory ? "default" : "outline"}
+                    size="sm"
+                    className={`rounded-full px-6 py-2 transition-all duration-300 ${
+                      category === selectedCategory
+                        ? "bg-gradient-to-r from-emerald-600 to-green-600 text-white shadow-lg"
+                        : "bg-white/70 text-emerald-700 border-emerald-200 hover:bg-emerald-50 hover:border-emerald-300"
+                    }`}
+                  >
+                    <Link href={`?category=${encodeURIComponent(category ?? "All")}&page=1`}>{category}</Link>
+                  </Button>
+                ))}
+              </div>
             </div>
+          </div>
 
-            <div className="flex flex-wrap items-center justify-center gap-2 mb-6">
-              {categories.map((category) => (
-                <Button
-                  key={category}
-                  asChild
-                  variant={category === selectedCategory ? "default" : "outline"}
-                  size="sm"
-                  className="rounded-full px-4 py-1 bg-emerald-50 text-green-700 border-green-200 hover:text-white hover:bg-green-600"
-                >
-                  <Link href={`?category=${encodeURIComponent(category ?? "All")}&page=1`}>{category}</Link>
-                </Button>
-              ))}
-            </div>
-
-            <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+          {/* Articles Grid */}
+          <div className="container mx-auto px-4 py-16">
+            <div className="grid gap-8 md:gap-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
               {posts.map((post, index) => (
-                <Card key={post._id} className="flex flex-col overflow-hidden border border-emerald-100 shadow-md hover:shadow-lg transition-shadow bg-white dark:bg-emerald-950">
-                  <div className="relative w-full aspect-video overflow-hidden bg-emerald-50 dark:bg-emerald-900">                    {post.featureImage ? (
+                <Card key={post._id} className="group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-500 bg-white/80 backdrop-blur-sm rounded-2xl hover:scale-105">
+                  <div className="relative w-full aspect-[4/3] overflow-hidden bg-gradient-to-br from-emerald-50 to-teal-50 rounded-t-2xl">
+                    {post.featureImage ? (
                       <Image
                         src={urlFor(post.featureImage).url()}
                         alt={post.title}
                         fill
-                        className="object-contain object-center w-full h-full transition-transform duration-300 hover:scale-105 rounded-t-lg"
-                        sizes="(max-width: 768px) 100vw, 800px"
+                        className="object-cover object-center w-full h-full transition-transform duration-700 group-hover:scale-110"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         priority={index === 0}
                       />
-                    ) : (                      <Image
-                        src="/placeholder.svg"
-                        alt={post.title}
-                        fill
-                        className="object-contain object-center w-full h-full rounded-t-lg"
-                      />
+                    ) : (
+                      <div className="flex items-center justify-center h-full bg-gradient-to-br from-emerald-100 to-teal-100">
+                        <div className="w-16 h-16 bg-emerald-200 rounded-full flex items-center justify-center">
+                          <svg className="w-8 h-8 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+                          </svg>
+                        </div>
+                      </div>
                     )}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   </div>
-                  <CardHeader className="flex-1 pb-2">
-                    <div className="flex items-center gap-2 text-xs text-emerald-700 dark:text-emerald-200 mb-1">
-                      <span>{post.publishedAt ? new Date(post.publishedAt).toLocaleDateString() : ''}</span>
-                      <span>•</span>
-                      <span>{post.category}</span>
+                  
+                  <div className="p-6 md:p-8">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="px-3 py-1 bg-gradient-to-r from-emerald-100 to-teal-100 rounded-full">
+                        <span className="text-xs font-medium text-emerald-700">{post.category}</span>
+                      </div>
+                      <span className="text-xs text-gray-500">
+                        {post.publishedAt ? new Date(post.publishedAt).toLocaleDateString('en-US', { 
+                          month: 'short', 
+                          day: 'numeric', 
+                          year: 'numeric' 
+                        }) : ''}
+                      </span>
                     </div>
-                    <CardTitle className="line-clamp-2 text-green-800 dark:text-green-200 text-xl font-bold mb-1">{post.title}</CardTitle>
-                    <CardDescription className="line-clamp-3 text-gray-700 dark:text-gray-300 text-base">{post.description}</CardDescription>
-                  </CardHeader>
-                  <CardContent className="flex-1">
-                    <p className="text-sm text-gray-500 dark:text-gray-400">By {post.author || 'Admin'}</p>
-                  </CardContent>
-                  <CardFooter>
-                    <Button asChild variant="outline" className="w-full border-green-200 text-green-700 dark:text-green-200">
-                      <Link href={`/articles/${post.slug}`}>Read More</Link>
-                    </Button>
-                  </CardFooter>
+                    
+                    <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-emerald-700 transition-colors duration-300">
+                      {post.title}
+                    </h3>
+                    
+                    <p className="text-gray-600 mb-6 line-clamp-3 leading-relaxed">
+                      {post.description}
+                    </p>
+                    
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-3">
+                        <div className="w-8 h-8 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-full flex items-center justify-center">
+                          <span className="text-xs font-bold text-white">
+                            {(post.author || 'Admin').charAt(0).toUpperCase()}
+                          </span>
+                        </div>
+                        <span className="text-sm text-gray-500">By {post.author || 'Admin'}</span>
+                      </div>
+                      
+                      <Button asChild variant="ghost" className="group-hover:bg-emerald-50 group-hover:text-emerald-700 rounded-full px-4">
+                        <Link href={`/articles/${post.slug}`} className="flex items-center gap-2">
+                          Read More
+                          <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                          </svg>
+                        </Link>
+                      </Button>
+                    </div>
+                  </div>
                 </Card>
               ))}
             </div>
 
-            <div className="flex justify-center gap-2 mt-10">
-              {Array.from({ length: totalPages }, (_, i) => (
-                <Button
-                  key={i + 1}
-                  asChild
-                  variant={page === i + 1 ? "default" : "outline"}
-                  size="sm"
-                  className="rounded-full border-green-200 text-green-700 dark:text-green-200 bg-emerald-50 hover:text-white hover:bg-green-600"
-                >
-                  <Link href={`?category=${encodeURIComponent(selectedCategory ?? "All")}&page=${i + 1}`}>{i + 1}</Link>
-                </Button>
-              ))}
-            </div>
-          </>
-        )}
-      </div>
+            {/* Pagination */}
+            {totalPages > 1 && (
+              <div className="flex justify-center items-center gap-2 mt-16">
+                <div className="flex items-center gap-2 bg-white/80 backdrop-blur-sm rounded-full p-2 shadow-lg">
+                  {Array.from({ length: totalPages }, (_, i) => (
+                    <Button
+                      key={i + 1}
+                      asChild
+                      variant={page === i + 1 ? "default" : "ghost"}
+                      size="sm"
+                      className={`rounded-full w-10 h-10 ${
+                        page === i + 1
+                          ? "bg-gradient-to-r from-emerald-600 to-green-600 text-white shadow-md"
+                          : "text-emerald-700 hover:bg-emerald-50"
+                      }`}
+                    >
+                      <Link href={`?category=${encodeURIComponent(selectedCategory ?? "All")}&page=${i + 1}`}>
+                        {i + 1}
+                      </Link>
+                    </Button>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        </>
+      )}
     </div>
   )
 }
