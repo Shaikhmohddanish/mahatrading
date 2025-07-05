@@ -6,13 +6,28 @@ import { sanityClient, urlFor } from '../../lib/sanity'
 
 interface Article {
   _id: string;
-  title: string;
+  title: any[]; // Rich text array instead of string
   description?: string;
   slug: string;
   featureImage?: any;
   publishedAt?: string;
   author?: string;
   category?: string;
+}
+
+// Helper function to extract plain text from rich text
+function extractPlainText(richText: any[]): string {
+  if (!richText || !Array.isArray(richText)) return '';
+  
+  return richText
+    .filter(block => block._type === 'block' && block.children)
+    .map(block => 
+      block.children
+        .filter((child: any) => child._type === 'span')
+        .map((child: any) => child.text)
+        .join('')
+    )
+    .join(' ');
 }
 
 export default async function BlogPage(props: { searchParams?: { page?: string, category?: string } }) {
@@ -108,7 +123,7 @@ export default async function BlogPage(props: { searchParams?: { page?: string, 
                     {post.featureImage ? (
                       <Image
                         src={urlFor(post.featureImage).url()}
-                        alt={post.title}
+                        alt={extractPlainText(post.title)}
                         fill
                         className="object-cover object-center w-full h-full transition-transform duration-700 group-hover:scale-110"
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -141,7 +156,7 @@ export default async function BlogPage(props: { searchParams?: { page?: string, 
                     </div>
                     
                     <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-emerald-700 transition-colors duration-300">
-                      {post.title}
+                      {extractPlainText(post.title)}
                     </h3>
                     
                     <p className="text-gray-600 mb-6 line-clamp-3 leading-relaxed">

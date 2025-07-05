@@ -10,7 +10,7 @@ import { Button } from '@/components/ui/button'
 
 // Update Article type to match new schema and support multiple images
 interface Article {
-  title: string;
+  title: any[]; // Rich text array instead of string
   featureImage?: any;
   images?: any[];
   content: any;
@@ -19,6 +19,21 @@ interface Article {
   keywords?: string[];
   category?: string;
   publishedAt?: string;
+}
+
+// Helper function to extract plain text from rich text
+function extractPlainText(richText: any[]): string {
+  if (!richText || !Array.isArray(richText)) return '';
+  
+  return richText
+    .filter(block => block._type === 'block' && block.children)
+    .map(block => 
+      block.children
+        .filter((child: any) => child._type === 'span')
+        .map((child: any) => child.text)
+        .join('')
+    )
+    .join(' ');
 }
 
 type Props = { params: { slug: string } }
@@ -74,7 +89,7 @@ export default async function ArticleDetailPage(props: Props) {
       {/* Article Content */}
       <main className="container mx-auto px-4 py-8 md:py-12">
         <div className="max-w-4xl mx-auto">
-          <title>{article.metaTitle || article.title}</title>
+          <title>{article.metaTitle || extractPlainText(article.title)}</title>
           <meta name="description" content={article.metaDescription || ''} />
           
           <Card className="overflow-hidden shadow-2xl border-0 bg-white/90 backdrop-blur-sm rounded-3xl mb-12">
@@ -88,7 +103,7 @@ export default async function ArticleDetailPage(props: Props) {
                         <div className="relative w-full h-80 md:h-96 lg:h-[500px] overflow-hidden rounded-t-3xl">
                           <Image
                             src={urlFor(img).url()}
-                            alt={article.title}
+                            alt={extractPlainText(article.title)}
                             fill
                             className="object-cover object-center w-full h-full"
                             priority={idx === 0}
@@ -107,7 +122,7 @@ export default async function ArticleDetailPage(props: Props) {
               <div className="relative w-full h-80 md:h-96 lg:h-[500px] overflow-hidden rounded-t-3xl">
                 <Image
                   src={urlFor(article.featureImage).url()}
-                  alt={article.title}
+                  alt={extractPlainText(article.title)}
                   fill
                   className="object-cover object-center w-full h-full"
                   priority
@@ -133,7 +148,7 @@ export default async function ArticleDetailPage(props: Props) {
               </div>
 
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-8 leading-tight">
-                {article.title}
+                {extractPlainText(article.title)}
               </h1>
 
               {/* Article Content */}
@@ -176,7 +191,7 @@ export default async function ArticleDetailPage(props: Props) {
                       {post.featureImage ? (
                         <Image
                           src={urlFor(post.featureImage).url()}
-                          alt={post.title}
+                          alt={extractPlainText(post.title)}
                           fill
                           className="object-cover object-center w-full h-full transition-transform duration-700 group-hover:scale-110"
                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -204,10 +219,9 @@ export default async function ArticleDetailPage(props: Props) {
                           }) : ''}
                         </span>
                       </div>
-                      
-                      <h3 className="text-lg font-bold text-gray-900 mb-2 line-clamp-2 group-hover:text-emerald-700 transition-colors duration-300">
-                        {post.title}
-                      </h3>
+                          <h3 className="text-lg font-bold text-gray-900 mb-2 line-clamp-2 group-hover:text-emerald-700 transition-colors duration-300">
+                      {extractPlainText(post.title)}
+                    </h3>
                       
                       <p className="text-gray-600 mb-4 line-clamp-2 text-sm">
                         {post.description}
