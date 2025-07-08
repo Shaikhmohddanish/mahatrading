@@ -7,6 +7,8 @@ import { Badge } from '@/components/ui/badge'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
+import { portableTextComponents } from '@/components/portable-text-components'
+import '@/styles/blog.css'
 
 // Update Article type to match new schema and support multiple images
 interface Article {
@@ -152,8 +154,11 @@ export default async function ArticleDetailPage(props: Props) {
               </h1>
 
               {/* Article Content */}
-              <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-                <PortableText value={article.content} />
+              <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed blog-content">
+                <PortableText 
+                  value={article.content}
+                  components={portableTextComponents}
+                />
               </div>
 
               {/* Keywords */}
