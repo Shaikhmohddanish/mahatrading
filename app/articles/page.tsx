@@ -125,7 +125,7 @@ export default async function BlogPage(props: { searchParams?: { page?: string, 
                         src={urlFor(post.featureImage).url()}
                         alt={extractPlainText(post.title)}
                         fill
-                        className="object-cover object-center w-full h-full transition-transform duration-700 group-hover:scale-110"
+                        className="object-contain w-full h-full transition-transform duration-700 group-hover:scale-110"
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         priority={index === 0}
                       />

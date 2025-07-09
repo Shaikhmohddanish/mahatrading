@@ -107,7 +107,7 @@ export default async function ArticleDetailPage(props: Props) {
                             src={urlFor(img).url()}
                             alt={extractPlainText(article.title)}
                             fill
-                            className="object-cover object-center w-full h-full"
+                            className="object-contain w-full h-full"
                             priority={idx === 0}
                             sizes="100vw"
                           />
@@ -126,7 +126,7 @@ export default async function ArticleDetailPage(props: Props) {
                   src={urlFor(article.featureImage).url()}
                   alt={extractPlainText(article.title)}
                   fill
-                  className="object-cover object-center w-full h-full"
+                  className="object-contain w-full h-full"
                   priority
                   sizes="100vw"
                 />
@@ -198,7 +198,7 @@ export default async function ArticleDetailPage(props: Props) {
                           src={urlFor(post.featureImage).url()}
                           alt={extractPlainText(post.title)}
                           fill
-                          className="object-cover object-center w-full h-full transition-transform duration-700 group-hover:scale-110"
+                          className="object-contain w-full h-full transition-transform duration-700 group-hover:scale-110"
                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                           priority={index === 0}
                         />
