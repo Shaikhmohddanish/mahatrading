@@ -41,6 +41,9 @@ export default function Header() {
           <Link href="/user-consent" className="text-sm font-medium transition-colors hover:text-black">
             User Consent
           </Link>
+          <Link href="/articles" className="text-sm font-medium transition-colors hover:text-black">
+            Articles
+          </Link>
           <DropdownMenu open={isDropdownOpen} onOpenChange={setIsDropdownOpen}>
             <DropdownMenuTrigger asChild>
               <Button
@@ -85,9 +88,6 @@ export default function Header() {
           </DropdownMenu>
           <Link href="/talk-to-us" className="text-sm font-medium transition-colors hover:text-black">
             Talk To Us
-          </Link>
-          <Link href="/articles" className="text-sm font-medium transition-colors hover:text-black">
-            Articles
           </Link>
         </nav>
 
@@ -142,6 +142,17 @@ export default function Header() {
                 >
                   <FileText className="h-5 w-5" />
                   User Consent
+                </Link>
+
+                <Link
+                  href="/articles"
+                  className={`flex items-center gap-3 px-4 py-3 text-lg font-medium rounded-lg transition-all duration-200 hover:bg-emerald-50`}
+                  onClick={() => {
+                    setIsOpen(false)
+                  }}
+                >
+                  <FileText className="h-5 w-5" />
+                  Articles
                 </Link>
 
                 <div
@@ -203,17 +214,6 @@ export default function Header() {
                 >
                   <Phone className="h-5 w-5" />
                   Talk To Us
-                </Link>
-
-                <Link
-                  href="/articles"
-                  className={`flex items-center gap-3 px-4 py-3 text-lg font-medium rounded-lg transition-all duration-200 hover:bg-emerald-50`}
-                  onClick={() => {
-                    setIsOpen(false)
-                  }}
-                >
-                  <FileText className="h-5 w-5" />
-                  Articles
                 </Link>
               </div>
 
