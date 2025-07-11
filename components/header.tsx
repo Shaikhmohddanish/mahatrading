@@ -38,11 +38,11 @@ export default function Header() {
           <Link href="/" className="text-sm font-medium transition-colors hover:text-black">
             Home
           </Link>
-          <Link href="/user-consent" className="text-sm font-medium transition-colors hover:text-black">
-            User Consent
-          </Link>
           <Link href="/articles" className="text-sm font-medium transition-colors hover:text-black">
             Articles
+          </Link>
+          <Link href="/user-consent" className="text-sm font-medium transition-colors hover:text-black">
+            User Consent
           </Link>
           <DropdownMenu open={isDropdownOpen} onOpenChange={setIsDropdownOpen}>
             <DropdownMenuTrigger asChild>
@@ -131,6 +131,17 @@ export default function Header() {
                 </Link>
 
                 <Link
+                  href="/articles"
+                  className={`flex items-center gap-3 px-4 py-3 text-lg font-medium rounded-lg transition-all duration-200 hover:bg-emerald-50`}
+                  onClick={() => {
+                    setIsOpen(false)
+                  }}
+                >
+                  <FileText className="h-5 w-5" />
+                  Articles
+                </Link>
+
+                <Link
                   href="/user-consent"
                   className={`flex items-center gap-3 px-4 py-3 text-lg font-medium rounded-lg transition-all duration-200 ${
                     activeItem === "consent" ? "bg-emerald-100 text-emerald-700" : "hover:bg-emerald-50"
@@ -142,17 +153,6 @@ export default function Header() {
                 >
                   <FileText className="h-5 w-5" />
                   User Consent
-                </Link>
-
-                <Link
-                  href="/articles"
-                  className={`flex items-center gap-3 px-4 py-3 text-lg font-medium rounded-lg transition-all duration-200 hover:bg-emerald-50`}
-                  onClick={() => {
-                    setIsOpen(false)
-                  }}
-                >
-                  <FileText className="h-5 w-5" />
-                  Articles
                 </Link>
 
                 <div

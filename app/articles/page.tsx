@@ -19,10 +19,10 @@ interface Article {
 
 // Metadata for articles listing page
 export const metadata: Metadata = {
-  title: 'Blog Articles - Maha Tradings',
+  title: 'Articles - Maha Tradings',
   description: truncateText('Discover expert insights, tips, and analysis on stock market trading and investing from Maha Tradings.'),
   openGraph: {
-    title: 'Blog Articles - Maha Tradings',
+    title: 'Articles - Maha Tradings',
     description: truncateText('Discover expert insights, tips, and analysis on stock market trading and investing from Maha Tradings.'),
     type: 'website',
     url: getAbsoluteUrl('articles'),
@@ -31,14 +31,14 @@ export const metadata: Metadata = {
         url: getAbsoluteUrl('/logo.png'),
         width: 1200,
         height: 630,
-        alt: 'Maha Tradings Blog Articles',
+        alt: 'Maha Tradings Articles',
       }
     ],
     siteName: 'Maha Tradings',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Blog Articles - Maha Tradings',
+    title: 'Articles - Maha Tradings',
     description: truncateText('Discover expert insights, tips, and analysis on stock market trading and investing from Maha Tradings.'),
     images: [getAbsoluteUrl('/logo.png')],
   }
@@ -96,7 +96,7 @@ export default async function BlogPage(props: { searchParams?: { page?: string, 
         <div className="relative container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-emerald-100 bg-clip-text text-transparent">
-              Our Blog
+              Articles
             </h1>
             <p className="text-xl md:text-2xl text-emerald-50 mb-8 leading-relaxed">
               Discover insights, trends, and expert advice from our trading professionals
