@@ -5,17 +5,43 @@ import "./globals.css"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import ScrollToTop from "@/components/scroll-to-top"
+import { getAbsoluteUrl, truncateText } from "@/lib/meta-utils"
+import { Toaster } from "@/components/ui/toaster"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Maha Tradings - Expert Stock Market Trading Insights",
-  description: "Get expert stock market trading insights with Maha Tradings",
-  generator: 'v0.dev',
+  description: truncateText("Get expert stock market trading insights and research alerts with Maha Tradings. Expert analysis for successful trading strategies."),
+  generator: 'Next.js',
+  keywords: ['stock trading', 'market research', 'trading alerts', 'investment insights', 'Maha Tradings'],
   icons: {
     icon: '/logo.png',
     shortcut: '/logo.png',
     apple: '/logo.png',
+  },
+  metadataBase: new URL('https://mahatradings.com'),
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: getAbsoluteUrl(''),
+    title: 'Maha Tradings - Expert Stock Market Trading Insights',
+    description: truncateText('Get expert stock market trading insights and research alerts with Maha Tradings. Expert analysis for successful trading strategies.'),
+    siteName: 'Maha Tradings',
+    images: [
+      {
+        url: getAbsoluteUrl('/logo.png'),
+        width: 1200,
+        height: 630,
+        alt: 'Maha Tradings',
+      }
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Maha Tradings - Expert Stock Market Trading Insights',
+    description: truncateText('Get expert stock market trading insights and research alerts with Maha Tradings'),
+    images: [getAbsoluteUrl('/logo.png')],
   },
 }
 
@@ -31,6 +57,7 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <Toaster />
       </body>
     </html>
   )

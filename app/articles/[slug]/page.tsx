@@ -9,6 +9,9 @@ import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { portableTextComponents } from '@/components/portable-text-components'
 import '@/styles/blog.css'
+import { Metadata } from 'next'
+import { getAbsoluteUrl, truncateText } from '@/lib/meta-utils'
+import SocialShare from '@/components/social-share'
 
 // Update Article type to match new schema and support multiple images
 interface Article {
@@ -39,6 +42,66 @@ function extractPlainText(richText: any[]): string {
 }
 
 type Props = { params: { slug: string } }
+
+// Generate metadata for SEO and social sharing
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = params;
+  
+  // Fetch article data for metadata
+  const query = `*[_type == "article" && slug.current == $slug][0] {
+    title,
+    featureImage,
+    metaTitle,
+    metaDescription,
+    keywords,
+    "category": category->title,
+    publishedAt
+  }`
+  
+  const article = await sanityClient.fetch(query, { slug });
+  
+  if (!article) {
+    return {
+      title: 'Article Not Found',
+      description: 'The requested article could not be found.'
+    };
+  }
+  
+  const title = article.metaTitle || extractPlainText(article.title);
+  const description = truncateText(article.metaDescription || extractPlainText(article.title));
+  const imageUrl = article.featureImage 
+    ? getAbsoluteUrl(urlFor(article.featureImage).width(1200).height(630).url())
+    : getAbsoluteUrl('/placeholder-logo.png');
+  
+  return {
+    title,
+    description,
+    keywords: article.keywords || [],
+    openGraph: {
+      title,
+      description,
+      type: 'article',
+      publishedTime: article.publishedAt,
+      url: getAbsoluteUrl(`articles/${slug}`),
+      images: [
+        {
+          url: imageUrl,
+          width: 1200,
+          height: 630,
+          alt: title,
+        }
+      ],
+      siteName: 'Maha Tradings',
+      locale: 'en_US',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [imageUrl],
+    }
+  };
+}
 
 export default async function ArticleDetailPage(props: Props) {
   const params = await props.params;
@@ -91,9 +154,6 @@ export default async function ArticleDetailPage(props: Props) {
       {/* Article Content */}
       <main className="container mx-auto px-4 py-8 md:py-12">
         <div className="max-w-4xl mx-auto">
-          <title>{article.metaTitle || extractPlainText(article.title)}</title>
-          <meta name="description" content={article.metaDescription || ''} />
-          
           <Card className="overflow-hidden shadow-2xl border-0 bg-white/90 backdrop-blur-sm rounded-3xl mb-12">
             {/* Featured Image Section */}
             {(article.images && article.images.length > 0) ? (
@@ -160,6 +220,12 @@ export default async function ArticleDetailPage(props: Props) {
                   components={portableTextComponents}
                 />
               </div>
+
+              {/* Social Share */}
+              <SocialShare 
+                url={`/articles/${params.slug}`} 
+                title={extractPlainText(article.title)}
+              />
 
               {/* Keywords */}
               {article.keywords && (

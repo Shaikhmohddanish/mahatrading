@@ -3,6 +3,8 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { sanityClient, urlFor } from '../../lib/sanity'
+import { Metadata } from 'next'
+import { getAbsoluteUrl, truncateText } from '@/lib/meta-utils'
 
 interface Article {
   _id: string;
@@ -14,6 +16,33 @@ interface Article {
   author?: string;
   category?: string;
 }
+
+// Metadata for articles listing page
+export const metadata: Metadata = {
+  title: 'Blog Articles - Maha Tradings',
+  description: truncateText('Discover expert insights, tips, and analysis on stock market trading and investing from Maha Tradings.'),
+  openGraph: {
+    title: 'Blog Articles - Maha Tradings',
+    description: truncateText('Discover expert insights, tips, and analysis on stock market trading and investing from Maha Tradings.'),
+    type: 'website',
+    url: getAbsoluteUrl('articles'),
+    images: [
+      {
+        url: getAbsoluteUrl('/logo.png'),
+        width: 1200,
+        height: 630,
+        alt: 'Maha Tradings Blog Articles',
+      }
+    ],
+    siteName: 'Maha Tradings',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Blog Articles - Maha Tradings',
+    description: truncateText('Discover expert insights, tips, and analysis on stock market trading and investing from Maha Tradings.'),
+    images: [getAbsoluteUrl('/logo.png')],
+  }
+};
 
 // Helper function to extract plain text from rich text
 function extractPlainText(richText: any[]): string {
