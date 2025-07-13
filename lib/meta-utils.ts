@@ -26,8 +26,8 @@ export function getAbsoluteUrl(url: string): string {
  * @returns The truncated text
  */
 export function truncateText(text: string, maxLength: number = 160): string {
-  if (text.length <= maxLength) {
-    return text;
+  if (!text || text.length <= maxLength) {
+    return text || '';
   }
 
   // Find the last space before maxLength to avoid cutting words in half
@@ -35,4 +35,33 @@ export function truncateText(text: string, maxLength: number = 160): string {
   const truncatedText = text.substring(0, lastSpace > 0 ? lastSpace : maxLength);
   
   return `${truncatedText}...`;
+}
+
+/**
+ * Optimizes an image URL for social sharing platforms
+ * @param imageUrl The original image URL or Sanity image reference
+ * @param urlFor The Sanity image URL builder function (if using Sanity)
+ * @returns An optimized image URL for social sharing
+ */
+export function getSocialShareImage(imageUrl: string | any, urlFor?: Function): string {
+  // If no image, return a placeholder
+  if (!imageUrl) {
+    return getAbsoluteUrl('/logo.png');
+  }
+  
+  // If it's a string URL (not a Sanity reference)
+  if (typeof imageUrl === 'string') {
+    return getAbsoluteUrl(imageUrl);
+  }
+  
+  // If it's a Sanity image reference and we have the urlFor function
+  if (urlFor) {
+    // Use 1:1 aspect ratio for WhatsApp to prevent cropping
+    // Use 'clip' fit mode to maintain the original aspect ratio without cropping
+    // Set quality to 80 for good balance between quality and file size
+    return getAbsoluteUrl(urlFor(imageUrl).width(1200).height(1200).fit('clip').quality(80).url());
+  }
+  
+  // Fallback
+  return getAbsoluteUrl('/logo.png');
 }

@@ -33,7 +33,9 @@ export default function SocialShare({ url, title }: SocialShareProps) {
 
   // Share to WhatsApp
   const handleWhatsAppShare = () => {
-    const whatsappUrl = `https://api.whatsapp.com/send?text=${encodedTitle}%20${encodedUrl}`;
+    // Using just text and URL format to ensure proper preview generation by WhatsApp
+    // This lets WhatsApp fetch the Open Graph tags properly
+    const whatsappUrl = `https://api.whatsapp.com/send?text=${encodedTitle}%0A${encodedUrl}`;
     window.open(whatsappUrl, '_blank');
     
     toast({

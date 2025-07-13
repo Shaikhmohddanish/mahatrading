@@ -10,7 +10,7 @@ import { Button } from '@/components/ui/button'
 import { portableTextComponents } from '@/components/portable-text-components'
 import '@/styles/blog.css'
 import { Metadata } from 'next'
-import { getAbsoluteUrl, truncateText } from '@/lib/meta-utils'
+import { getAbsoluteUrl, truncateText, getSocialShareImage } from '@/lib/meta-utils'
 import SocialShare from '@/components/social-share'
 
 // Update Article type to match new schema and support multiple images
@@ -69,9 +69,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   
   const title = article.metaTitle || extractPlainText(article.title);
   const description = truncateText(article.metaDescription || extractPlainText(article.title));
-  const imageUrl = article.featureImage 
-    ? getAbsoluteUrl(urlFor(article.featureImage).width(1200).height(630).url())
-    : getAbsoluteUrl('/placeholder-logo.png');
+  // Use our optimized social sharing image utility
+  const imageUrl = getSocialShareImage(article.featureImage, urlFor);
   
   return {
     title,
@@ -87,7 +86,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         {
           url: imageUrl,
           width: 1200,
-          height: 630,
+          height: 1200,
           alt: title,
         }
       ],
@@ -99,6 +98,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title,
       description,
       images: [imageUrl],
+    },
+    // Additional metadata for WhatsApp and other platforms
+    other: {
+      'whatsapp-preview-image': imageUrl
     }
   };
 }

@@ -39,7 +39,7 @@ export default function Header() {
             Home
           </Link>
           <Link href="/articles" className="text-sm font-medium transition-colors hover:text-black">
-            Articles
+            Insights
           </Link>
           <Link href="/user-consent" className="text-sm font-medium transition-colors hover:text-black">
             User Consent
@@ -138,7 +138,7 @@ export default function Header() {
                   }}
                 >
                   <FileText className="h-5 w-5" />
-                  Articles
+                  Insights
                 </Link>
 
                 <Link
