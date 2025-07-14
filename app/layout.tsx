@@ -16,9 +16,9 @@ export const metadata: Metadata = {
   generator: 'Next.js',
   keywords: ['stock trading', 'market research', 'trading alerts', 'investment insights', 'Maha Tradings'],
   icons: {
-    icon: '/logo.png',
-    shortcut: '/logo.png',
-    apple: '/logo.png',
+    icon: '/mahatradings-favicon.png',
+    shortcut: '/mahatradings-favicon.png',
+    apple: '/mahatradings-logo.png',
   },
   metadataBase: new URL('https://mahatradings.com'),
   openGraph: {
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     siteName: 'Maha Tradings',
     images: [
       {
-        url: getAbsoluteUrl('/logo.png'),
+        url: getAbsoluteUrl('/mahatradings-logo.png'),
         width: 1200,
         height: 630,
         alt: 'Maha Tradings',
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Maha Tradings - Expert Stock Market Trading Insights',
     description: truncateText('Get expert stock market trading insights and research alerts with Maha Tradings'),
-    images: [getAbsoluteUrl('/logo.png')],
+    images: [getAbsoluteUrl('/mahatradings-logo.png')],
   },
 }
 

@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <Link href="/" className="inline-block">
-              <Image src="/logo.png" alt="Maha Tradings" width={180} height={50} className="h-12 w-auto" />
+              <Image src="/mahatradings-logo.png" alt="Maha Tradings" width={180} height={50} className="h-12 w-auto" />
             </Link>
             <p className="text-sm">
               ODR Portal (Securities Market Approach for Resolution through ODR Portal) can be accessed via the

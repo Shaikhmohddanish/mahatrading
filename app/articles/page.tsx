@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     url: getAbsoluteUrl('articles'),
     images: [
       {
-        url: getAbsoluteUrl('/logo.png'),
+        url: getAbsoluteUrl('/mahatradings-logo.png'),
         width: 1200,
         height: 630,
         alt: 'Maha Tradings Articles',
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Articles - Maha Tradings',
     description: truncateText('Discover expert insights, tips, and analysis on stock market trading and investing from Maha Tradings.'),
-    images: [getAbsoluteUrl('/logo.png')],
+    images: [getAbsoluteUrl('/mahatradings-logo.png')],
   }
 };
 
@@ -96,7 +96,7 @@ export default async function BlogPage(props: { searchParams?: { page?: string, 
         <div className="relative container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-emerald-100 bg-clip-text text-transparent">
-              Articles
+              Insights
             </h1>
             <p className="text-xl md:text-2xl text-emerald-50 mb-8 leading-relaxed">
               Discover insights, trends, and expert advice from our trading professionals

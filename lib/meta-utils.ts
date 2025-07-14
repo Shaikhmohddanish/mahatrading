@@ -46,7 +46,7 @@ export function truncateText(text: string, maxLength: number = 160): string {
 export function getSocialShareImage(imageUrl: string | any, urlFor?: Function): string {
   // If no image, return a placeholder
   if (!imageUrl) {
-    return getAbsoluteUrl('/logo.png');
+    return getAbsoluteUrl('/mahatradings-logo.png');
   }
   
   // If it's a string URL (not a Sanity reference)
@@ -63,5 +63,5 @@ export function getSocialShareImage(imageUrl: string | any, urlFor?: Function): 
   }
   
   // Fallback
-  return getAbsoluteUrl('/logo.png');
+  return getAbsoluteUrl('/mahatradings-logo.png');
 }
