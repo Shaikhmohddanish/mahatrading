@@ -95,11 +95,11 @@ export default async function BlogPage(props: { searchParams?: { page?: string, 
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="relative container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-emerald-100 bg-clip-text text-transparent">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-white to-emerald-100 bg-clip-text text-transparent w-full">
               Insights
             </h1>
             <p className="text-xl md:text-2xl text-emerald-50 mb-8 leading-relaxed">
-              Discover insights, trends, and expert advice from our trading professionals
+              Discover Articles, trends, and expert advice from our trading professionals
             </p>
             <div className="flex items-center justify-center gap-4 text-sm text-emerald-100">
               <span>{allPosts.length} Articles</span>
