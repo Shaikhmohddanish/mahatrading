@@ -98,6 +98,7 @@ export default async function BlogPage(props: { searchParams?: { page?: string, 
             <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-white to-emerald-100 bg-clip-text text-transparent w-full">
               Insights
             </h1>
+            <br />
             <p className="text-xl md:text-2xl text-emerald-50 mb-8 leading-relaxed">
               Discover Articles, trends, and expert advice from our trading professionals
             </p>
