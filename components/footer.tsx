@@ -136,6 +136,7 @@ export default function Footer() {
         <div className="border-t border-white/20 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm">Maha Tradings</p>
           <p className="text-sm mt-2 md:mt-0">© Copyright 2025, All Rights Reserved by Maha Tradings.</p>
+          <p className="text-sm">Note: we are not SEBI registered</p>
         </div>
       </div>
       {/* Floating Action Buttons */}
